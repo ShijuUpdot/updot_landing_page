@@ -5,19 +5,18 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav>
-      <div className="max-w-full mx-auto px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="container mx-auto">
+      <div className="max-w-full mx-auto px-4">
+        <div
+          className="flex items-center justify-between"
+          style={{
+            height: '5rem',
+          }}
+        >
           <div className="w-full justify-between flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <Link className="flex-shrink-0" href="#">
-                <Image
-                  className="h-8 w-8"
-                  src="/logo.svg"
-                  alt="logo"
-                  width={100}
-                  height={100}
-                />
+                <Image src="/logo.svg" alt="logo" width={65} height={65} />
               </Link>
               <div className="px-4 hidden md:block">
                 <hr className="h-8 border-[#1C1C1C] border-l-2" />
@@ -32,10 +31,19 @@ export default function Navbar() {
               <div className="ml-10 flex items-center space-x-10">
                 <div className="hidden md:block">
                   <Link
-                    className="text-gray-300 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium hidden md:block"
+                    className="text-black hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium hidden md:block"
                     href="tel:917353311555"
                   >
-                    +91&nbsp;7353311555
+                    <div className="flex items-center gap-3">
+                      <Image
+                        src="/icons/telephone.svg"
+                        alt="phone"
+                        width={18}
+                        height={18}
+                        className="inline"
+                      />
+                      <span>+91&nbsp;7353311555</span>
+                    </div>
                   </Link>
                 </div>
                 <IconButton icon={'/icons/arrow_right.svg'}>
