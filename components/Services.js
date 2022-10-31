@@ -20,11 +20,10 @@ const Services = () => {
       <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
         <div className="flex flex-col justify-center items-start relative">
           <Image
-            src="/img/services.png"
-            alt="hero"
+            src="/img/services.svg"
+            alt="service"
             width={430}
             height={595.79}
-            className="max-w-full"
           />
         </div>
         <div className="flex flex-col justify-center relative z-20 gap-6">

@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="flex flex-col justify-center relative z-20 gap-6 order-last md:order-first">
           <h1
-            className="text-4xl sm:text-5xl font-extrabold flex flex-col text-gray-900"
+            className="text-4xl sm:text-5xl xl:text-6xl font-extrabold flex flex-col text-gray-900"
             style={{
               lineHeight: '114%',
             }}
