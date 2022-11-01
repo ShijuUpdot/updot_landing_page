@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const IconButton = ({ children, icon, style, onClick }) => {
+const IconButton = ({ children, icon, style, onClick, order = 1 }) => {
   return (
     <button
       type="button"
@@ -9,7 +9,7 @@ const IconButton = ({ children, icon, style, onClick }) => {
       style={style}
       onClick={onClick}
     >
-      {children}
+      <span className={`order-${order}`}>{children}</span>
       <Image src={icon} alt="icon" width={15} height={15} />
     </button>
   )

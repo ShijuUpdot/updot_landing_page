@@ -7,7 +7,7 @@ const Stories = () => {
   return (
     <div className="flex relative">
       <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
-        <div className="flex flex-col justify-center relative z-20 gap-6">
+        <div className="flex flex-col justify-center relative z-20 gap-6 md:pl-[19%] xl:pl-[20.5%]">
           <h3 className="text-4xl sm:text-4xl font-semibold flex flex-col text-gray-900">
             RE/MAX Website Design
           </h3>
