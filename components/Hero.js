@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import HeroImg from '../assets/Hero.svg'
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-start relative z-20">
-          <Image src="/img/hero.svg" alt="hero" width={1000} height={1000} />
+          <Image src={HeroImg} alt="hero" />
         </div>
       </div>
     </div>

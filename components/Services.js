@@ -18,7 +18,7 @@ const Services = () => {
   return (
     <div className="container mx-auto px-4 flex relative">
       <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
-        <div className="flex flex-col justify-center items-start relative">
+        <div className="flex flex-col justify-center items-start relative order-last sm:order-first">
           <Image
             src="/img/services.svg"
             alt="service"
@@ -27,7 +27,7 @@ const Services = () => {
           />
         </div>
         <div className="flex flex-col justify-center relative z-20 gap-6">
-          <h3 className="text-4xl sm:text-4xl font-semibold flex flex-col text-gray-900">
+          <h3 className="text-3xl text-center sm:text-left sm:text-4xl font-semibold flex flex-col text-gray-900 pt-10">
             Our Mastered Skills
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 grid-flow-row">
@@ -41,7 +41,7 @@ const Services = () => {
             ))}
           </div>
           <div className="flex items-center justify-center md:justify-start">
-            <Link className="py-2 font-bold sm:text-lg" href="#">
+            <Link className="py-2 font-bold text-xl" href="#">
               <div className="flex items-center gap-2">
                 <span>Explore Services</span>
                 <Image
