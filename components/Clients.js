@@ -5,7 +5,7 @@ import RemaxImg from '../assets/clients/remax.svg'
 import KiaImg from '../assets/clients/kia.svg'
 import ChaumetImg from '../assets/clients/chaumet.svg'
 import AgthiaImg from '../assets/clients/agthia.svg'
-import HyundaiImg from '../assets/clients/Hyundai.svg'
+import HyundaiImg from '../assets/clients/hyundai.svg'
 
 const Clients = () => {
   const clients = [

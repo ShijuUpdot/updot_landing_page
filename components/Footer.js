@@ -32,24 +32,24 @@ const Footer = () => {
         <div className="flex gap-5 self-center justify-end">
           <Link
             href="#"
-            class="bg-gray-100 h-14 w-14 rounded-full flex items-center justify-center"
+            className="bg-gray-100 h-14 w-14 rounded-full flex items-center justify-center"
           >
             <Image
               alt="facebook"
               src="/icons/fb.svg"
-              class="mx-auto object-contain "
+              className="mx-auto object-contain "
               width={20}
               height={20}
             />
           </Link>
           <Link
             href="#"
-            class="bg-gray-100 h-14 w-14 rounded-full flex items-center justify-center"
+            className="bg-gray-100 h-14 w-14 rounded-full flex items-center justify-center"
           >
             <Image
               alt="instagram"
               src="/icons/insta.svg"
-              class="mx-auto object-contain "
+              className="mx-auto object-contain "
               width={20}
               height={20}
             />
