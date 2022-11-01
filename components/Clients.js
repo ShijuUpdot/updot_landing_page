@@ -1,29 +1,34 @@
 import React from 'react'
 import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
+import RemaxImg from '../assets/clients/remax.svg'
+import KiaImg from '../assets/clients/kia.svg'
+import ChaumetImg from '../assets/clients/chaumet.svg'
+import AgthiaImg from '../assets/clients/agthia.svg'
+import HyundaiImg from '../assets/clients/Hyundai.svg'
 
 const Clients = () => {
   const clients = [
     {
       name: 'Remax',
-      logo: '/img/clients/remax.svg',
+      logo: RemaxImg,
     },
     {
       name: 'Kia',
 
-      logo: '/img/clients/kia.svg',
+      logo: KiaImg,
     },
     {
       name: 'Chaumet',
-      logo: '/img/clients/chaumet.svg',
+      logo: ChaumetImg,
     },
     {
       name: 'Agthia',
-      logo: '/img/clients/agthia.svg',
+      logo: AgthiaImg,
     },
     {
       name: 'Hyundai',
-      logo: '/img/clients/Hyundai.svg',
+      logo: HyundaiImg,
     },
   ]
   return (

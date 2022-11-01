@@ -1,94 +1,113 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+import RemaxImg from '../assets/trustedby/Remax.svg'
+import KiaImg from '../assets/trustedby/Kia.svg'
+import ChaumetImg from '../assets/trustedby/Chaumet.svg'
+import AgthiaImg from '../assets/trustedby/Agthia.svg'
+import HyundaiImg from '../assets/trustedby/Hyundai.svg'
+import BookyanHolidaysImg from '../assets/trustedby/BookyanHolidays.svg'
+import ModonImg from '../assets/trustedby/Modon.svg'
+import HudayriyatImg from '../assets/trustedby/Hudayriyat.svg'
+import FortuneAvenueImg from '../assets/trustedby/FortuneAvenue.svg'
+import ZeroLitreImg from '../assets/trustedby/ZeroLitre.svg'
+import WolfWizardImg from '../assets/trustedby/WolfWizard.svg'
+import TaibaImg from '../assets/trustedby/Taiba.svg'
+import EnvntImg from '../assets/trustedby/Envnt.svg'
+import SombreroTortillaImg from '../assets/trustedby/SombreroTortilla.svg'
+import SkullcandyImg from '../assets/trustedby/Skullcandy.svg'
+import NovoCinemasImg from '../assets/trustedby/NovoCinemas.svg'
+import GenesisImg from '../assets/trustedby/Genesis.svg'
+import HiSenseImg from '../assets/trustedby/Hi-Sense.svg'
+import AlainImg from '../assets/trustedby/Alain.svg'
+import MeatHouseImg from '../assets/trustedby/MeatHouse.svg'
 
 const TrustedBy = () => {
   const trustedBy = [
     {
       name: 'Remax',
-      logo: '/img/trustedBy/Remax.svg',
+      logo: RemaxImg,
     },
     {
       name: 'KIA',
-      logo: '/img/trustedBy/KIA.svg',
+      logo: KiaImg,
     },
     {
       name: 'Chaumet',
-      logo: '/img/trustedBy/Chaumet.svg',
+      logo: ChaumetImg,
     },
     {
       name: 'Hyundai',
-      logo: '/img/trustedBy/Hyundai.svg',
+      logo: HyundaiImg,
     },
     {
       name: 'Bookyan Holidays',
-      logo: '/img/trustedBy/BookyanHolidays.svg',
+      logo: BookyanHolidaysImg,
     },
     {
       name: 'Agthia',
-      logo: '/img/trustedBy/Agthia.svg',
+      logo: AgthiaImg,
     },
     {
       name: 'Modon',
-      logo: '/img/trustedBy/Modon.svg',
+      logo: ModonImg,
     },
     {
       name: 'Hudayriyat',
-      logo: '/img/trustedBy/Hudayriyat.svg',
+      logo: HudayriyatImg,
     },
     {
       name: 'Fortune Avenue',
-      logo: '/img/trustedBy/FortuneAvenue.svg',
+      logo: FortuneAvenueImg,
     },
     {
       name: 'Zero Litre',
-      logo: '/img/trustedBy/ZeroLitre.svg',
+      logo: ZeroLitreImg,
     },
     {
       name: 'Wolf Wizard',
-      logo: '/img/trustedBy/WolfWizard.svg',
+      logo: WolfWizardImg,
     },
     {
       name: 'Taiba',
-      logo: '/img/trustedBy/Taiba.svg',
+      logo: TaibaImg,
     },
     {
       name: 'Envnt',
-      logo: '/img/trustedBy/Envnt.svg',
+      logo: EnvntImg,
     },
     {
       name: 'Sombrero Tortilla',
-      logo: '/img/trustedBy/SombreroTortilla.svg',
+      logo: SombreroTortillaImg,
     },
     {
       name: 'Skullcandy',
-      logo: '/img/trustedBy/Skullcandy.svg',
+      logo: SkullcandyImg,
     },
     {
       name: 'Novo Cinemas',
-      logo: '/img/trustedBy/NovoCinemas.svg',
+      logo: NovoCinemasImg,
     },
     {
       name: 'Genesis',
-      logo: '/img/trustedBy/Genesis.svg',
+      logo: GenesisImg,
     },
     {
       name: 'Hi-Sense',
-      logo: '/img/trustedBy/Hi-Sense.svg',
+      logo: HiSenseImg,
     },
     {
       name: 'Alain',
-      logo: '/img/trustedBy/Alain.svg',
+      logo: AlainImg,
     },
     {
       name: 'Meat House',
-      logo: '/img/trustedBy/MeatHouse.svg',
+      logo: MeatHouseImg,
     },
   ]
 
   return (
     <div className="container mx-auto px-4 flex relative">
-      <div className="grid gap-x-36 gap-y-9 md:grid-cols-4 align-middle justify-between w-full">
+      <div className="grid gap-x-36 gap-y-9 md:grid-cols-4 align-middle justify-center w-full">
         {trustedBy.map((item) => (
           <div
             key={item.name}
@@ -97,10 +116,10 @@ const TrustedBy = () => {
             <Image
               src={item.logo}
               alt={item.name}
-              width={300}
-              height={200}
               style={{
-                objectFit: 'fill',
+                objectFit: 'cover',
+                width: '100%',
+                maxWidth: '100%',
               }}
             />
           </div>

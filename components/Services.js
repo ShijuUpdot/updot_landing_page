@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import ServiceCard from './ServiceCard'
+import ServiceImg from '../assets/services.svg'
 
 const Services = () => {
   const services = [
@@ -19,12 +20,7 @@ const Services = () => {
     <div className="container mx-auto px-4 flex relative">
       <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
         <div className="flex flex-col justify-center items-start relative order-last sm:order-first">
-          <Image
-            src="/img/services.svg"
-            alt="service"
-            width={430}
-            height={595.79}
-          />
+          <Image src={ServiceImg} alt="service" className="max-w-full" />
         </div>
         <div className="flex flex-col justify-center relative z-20 gap-6">
           <h3 className="text-3xl text-center sm:text-left sm:text-4xl font-semibold flex flex-col text-gray-900 pt-10">
