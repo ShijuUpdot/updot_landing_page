@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import MockupImg from '../assets/stories/Mockups.png'
 
 const Stories = () => {
   return (
-    <div className="container mx-auto px-4 flex relative">
+    <div className="flex relative">
       <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
         <div className="flex flex-col justify-center relative z-20 gap-6">
           <h3 className="text-4xl sm:text-4xl font-semibold flex flex-col text-gray-900">
@@ -32,10 +33,9 @@ const Stories = () => {
         </div>
         <div className="flex flex-col justify-center items-start relative">
           <Image
-            src="/img/stories/Mockups.png"
+            src={MockupImg}
             alt="service"
-            width={1209.96}
-            height={766.66}
+            style={{ width: '100%', objectFit: 'fill' }}
           />
         </div>
       </div>
