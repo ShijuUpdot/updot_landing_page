@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import PropTypes from 'prop-types'
 
 const IconButton = ({ children, icon, style, onClick, order = 1 }) => {
   return (
@@ -13,6 +14,14 @@ const IconButton = ({ children, icon, style, onClick, order = 1 }) => {
       <Image src={icon} alt="icon" width={20} height={20} />
     </button>
   )
+}
+
+IconButton.propTypes = {
+  children: PropTypes.node.isRequired,
+  icon: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
+  order: PropTypes.number,
 }
 
 export default IconButton
