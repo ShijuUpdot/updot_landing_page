@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import MockupImg from '../assets/stories/Mockups.png'
+import Review from './Review'
+import Avatar from '../assets/stories/avatars/1.png'
 
 const Stories = () => {
   return (
@@ -29,6 +31,17 @@ const Stories = () => {
                 />
               </div>
             </Link>
+          </div>
+          <div className="mt-6">
+            <Review
+              stars={5}
+              name="Shreya"
+              desc="Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
+            arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper
+            pretium ornare."
+              title="Best Web devlopment Agency in Market"
+              image={Avatar}
+            />
           </div>
         </div>
         <div className="flex flex-col justify-center items-start relative">

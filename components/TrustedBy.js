@@ -107,7 +107,7 @@ const TrustedBy = () => {
 
   return (
     <div className="container mx-auto px-4 flex relative">
-      <div className="grid gap-x-36 gap-y-9 md:grid-cols-4 align-middle justify-center w-full">
+      <div className="grid gap-x-8 md:gap-x-36 gap-y-9 grid-cols-4 align-middle justify-center w-full">
         {trustedBy.map((item) => (
           <div
             key={item.name}
