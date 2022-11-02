@@ -16,25 +16,13 @@ const Footer = () => {
           </Link>
           {/* For Mobile View */}
           <div className="flex-col w-fit mt-8 md:hidden flex">
-            <IconButton
-              icon={'/icons/web.svg'}
-              order={2}
-              style={{
-                backgroundColor: '#18181B',
-              }}
-            >
+            <IconButton icon={'/icons/web.svg'} order={2}>
               Visit Website
             </IconButton>
           </div>
         </div>
         <div className="flex-col w-fit text-center self-center justify-self-center hidden md:flex">
-          <IconButton
-            icon={'/icons/web.svg'}
-            order={2}
-            style={{
-              backgroundColor: '#18181B',
-            }}
-          >
+          <IconButton icon={'/icons/web.svg'} order={2}>
             Visit Website
           </IconButton>
         </div>
