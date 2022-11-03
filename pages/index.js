@@ -24,7 +24,7 @@ export default function Home() {
       </section>
       {/* Service Section */}
       <section>
-        <Title>Our Services</Title>
+        <Title>Why partner with UPDOT</Title>
         <Services />
       </section>
       {/* Success Stories */}

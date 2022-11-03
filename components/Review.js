@@ -1,19 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
+import PropTypes from 'prop-types'
 
 const Review = ({ stars, name, desc, image, title }) => {
   return (
     <div>
-      <div class="max-w-lg rounded-md bg-white">
-        <div class="flex space-x-0.5 pb-2">
+      <div className="max-w-lg rounded-md bg-white">
+        <div className="flex space-x-0.5 pb-2">
           {[...Array(stars)].map((e, i) => (
             <svg
               key={i}
-              class="w-5 h-5 text-[#FDB241]"
+              className="w-5 h-5 text-[#FDB241]"
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -21,27 +22,35 @@ const Review = ({ stars, name, desc, image, title }) => {
             </svg>
           ))}
         </div>
-        <div class="">
-          <h3 class="font-semibold text-gray-900">{title}</h3>
-          <p class="text-sm font-normal leading-5 text-gray-700 max-w-sm">
+        <div className="">
+          <h3 className="font-semibold text-gray-900">{title}</h3>
+          <p className="text-sm font-normal leading-5 text-gray-700 max-w-sm">
             {desc}
           </p>
         </div>
-        <div class="mt-6 flex items-center space-x-2">
-          <div class="flex flex-shrink-0 rounded-full border border-gray-200">
+        <div className="mt-6 flex items-center space-x-2">
+          <div className="flex flex-shrink-0 rounded-full border border-gray-200">
             <Image
-              class="w-8 h-8 object-cover rounded-full"
+              className="w-8 h-8 object-cover rounded-full"
               src={image}
               alt=""
             />
           </div>
-          <span class="text-sm font-semibold leading-5 text-gray-900">
+          <span className="text-sm font-semibold leading-5 text-gray-900">
             {name}
           </span>
         </div>
       </div>
     </div>
   )
+}
+
+Review.propTypes = {
+  stars: PropTypes.number,
+  name: PropTypes.string,
+  desc: PropTypes.string,
+  image: PropTypes.object,
+  title: PropTypes.string,
 }
 
 export default Review

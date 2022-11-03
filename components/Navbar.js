@@ -46,7 +46,7 @@ export default function Navbar() {
                     </div>
                   </Link>
                 </div>
-                <IconButton icon={'/icons/arrow_right.svg'}>
+                <IconButton icon={'/icons/arrow_right.svg'} order={2}>
                   Lets talk
                 </IconButton>
               </div>

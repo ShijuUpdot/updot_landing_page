@@ -180,11 +180,11 @@ const Contact = () => {
                   type="checkbox"
                   value=""
                   name="bordered-checkbox"
-                  class="w-5 h-5 accent-gray-900 rounded border-gray-300"
+                  className="w-5 h-5 accent-gray-900 rounded border-gray-300"
                 />
                 <label
                   htmlFor="service1"
-                  class="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
+                  className="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
                 >
                   UI/UX Design
                 </label>
@@ -195,11 +195,11 @@ const Contact = () => {
                   type="checkbox"
                   value=""
                   name="bordered-checkbox"
-                  class="w-5 h-5 accent-gray-900 rounded border-gray-300"
+                  className="w-5 h-5 accent-gray-900 rounded border-gray-300"
                 />
                 <label
                   htmlFor="service1"
-                  class="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
+                  className="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
                 >
                   Marketing & Content
                 </label>
@@ -210,11 +210,11 @@ const Contact = () => {
                   type="checkbox"
                   value=""
                   name="bordered-checkbox"
-                  class="w-5 h-5 accent-gray-900 rounded border-gray-300"
+                  className="w-5 h-5 accent-gray-900 rounded border-gray-300"
                 />
                 <label
                   htmlFor="service1"
-                  class="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
+                  className="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
                 >
                   Web Development
                 </label>
@@ -225,11 +225,11 @@ const Contact = () => {
                   type="checkbox"
                   value=""
                   name="bordered-checkbox"
-                  class="w-5 h-5 accent-gray-900 rounded border-gray-300"
+                  className="w-5 h-5 accent-gray-900 rounded border-gray-300"
                 />
                 <label
                   htmlFor="service1"
-                  class="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
+                  className="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
                 >
                   User Research Workshop
                 </label>
@@ -240,11 +240,11 @@ const Contact = () => {
                   type="checkbox"
                   value=""
                   name="bordered-checkbox"
-                  class="w-5 h-5 accent-gray-900 rounded border-gray-300"
+                  className="w-5 h-5 accent-gray-900 rounded border-gray-300"
                 />
                 <label
                   htmlFor="service1"
-                  class="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
+                  className="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
                 >
                   Brand Strategy
                 </label>
@@ -255,11 +255,11 @@ const Contact = () => {
                   type="checkbox"
                   value=""
                   name="bordered-checkbox"
-                  class="w-5 h-5 accent-gray-900 rounded border-gray-300"
+                  className="w-5 h-5 accent-gray-900 rounded border-gray-300"
                 />
                 <label
                   htmlFor="service1"
-                  class="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
+                  className="ml-2 w-full text-xl font-normal text-[#1C1C1C]"
                 >
                   Other
                 </label>
