@@ -35,9 +35,9 @@ const Footer = () => {
             <Image
               alt="facebook"
               src="/icons/fb.svg"
-              className="mx-auto object-contain "
-              width={20}
-              height={20}
+              className="mx-auto object-contain w-4 h-4"
+              width={18}
+              height={18}
             />
           </Link>
           <Link
@@ -47,9 +47,9 @@ const Footer = () => {
             <Image
               alt="instagram"
               src="/icons/insta.svg"
-              className="mx-auto object-contain "
-              width={20}
-              height={20}
+              className="mx-auto object-contain w-4 h-4"
+              width={18}
+              height={18}
             />
           </Link>
         </div>

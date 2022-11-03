@@ -111,7 +111,7 @@ const TrustedBy = () => {
         {trustedBy.map((item) => (
           <div
             key={item.name}
-            className="flex flex-col justify-center items-center relative"
+            className="flex flex-col justify-center items-center relative p-1 md:p-0"
           >
             <Image
               src={item.logo}

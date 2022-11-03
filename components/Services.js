@@ -17,13 +17,13 @@ const Services = () => {
   ]
 
   return (
-    <div className="container mx-auto px-4s flex relative">
+    <div className="container mx-auto px-4 flex relative">
       <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
-        <div className="flex flex-col justify-center items-start relative order-last sm:order-first">
+        <div className="flex flex-col justify-center items-start relative">
           <Image src={ServiceImg} alt="hero" />
         </div>
         <div className="flex flex-col justify-center relative z-20 gap-6">
-          <div className="ml-auto max-w-md flex flex-col gap-5">
+          <div className="mt-5 md:mt-0 ml-auto max-w-md flex flex-col gap-5">
             {services.map((service, index) => (
               <ServiceCard
                 key={service}
@@ -38,9 +38,11 @@ const Services = () => {
               consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
               arcu.
             </p>
-            <Link className="py-2 font-bold text-xl" href="#">
+            <Link className="py-2" href="#">
               <div className="flex items-center gap-2">
-                <span>Contact&nbsp;Us</span>
+                <span className="font-bold text-base md:text-xl text-gray-900">
+                  Contact&nbsp;Us
+                </span>
                 <Image
                   src="/icons/arrow_right.svg"
                   alt="phone"
