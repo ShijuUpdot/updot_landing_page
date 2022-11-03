@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import ServiceCard from './ServiceCard'
-import ServiceImg from '../assets/Services.svg'
+import ServiceImg from '../assets/services.svg'
 
 const Services = () => {
   const services = [

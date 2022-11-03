@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import IconButton from './IconButton'
-import Title from './Title'
 
 const HeroForm = () => {
   const [name, setName] = useState('')
