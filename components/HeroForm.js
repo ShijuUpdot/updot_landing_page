@@ -10,7 +10,7 @@ const HeroForm = () => {
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState('Submit')
   return (
-    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center py-8 px-12 w-full max-w-lg">
+    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center py-8 px-12 w-full max-w-lg ml-auto">
       <h3 className="uppercase text-2xl font-bold text-gray-900 text-center w-full pb-4">
         Get in Touch
       </h3>

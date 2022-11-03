@@ -36,7 +36,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-start relative z-20">
+        <div className="flex flex-col justify-end items-start relative z-20">
           <HeroForm />
         </div>
       </div>
