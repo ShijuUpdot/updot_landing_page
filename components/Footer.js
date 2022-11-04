@@ -5,14 +5,14 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto px-4 py-10 bg-white">
+    <footer className="container mx-auto px-4 py-10">
       <div className="grid grid-col-2 md:grid-cols-3 gap-4 md:justify-items-between w-full grid-flow-col">
         <div className="flex flex-col">
           <Link
             href="https://updot.in/"
             className="flex items-center flex-shrink-0 "
           >
-            <Image src="/logo.svg" alt="Updot Logo" width={65} height={65} />
+            <Image src="/logo.svg" alt="Updot Logo" width={50} height={50} />
           </Link>
           {/* For Mobile View */}
           <div className="flex-col w-fit mt-8 md:hidden flex">
@@ -35,7 +35,7 @@ const Footer = () => {
             <Image
               alt="facebook"
               src="/icons/fb.svg"
-              className="mx-auto object-contain w-4 h-4"
+              className="mx-auto object-contain w-5 h-5"
               width={18}
               height={18}
             />
@@ -47,7 +47,7 @@ const Footer = () => {
             <Image
               alt="instagram"
               src="/icons/insta.svg"
-              className="mx-auto object-contain w-4 h-4"
+              className="mx-auto object-contain w-5 h-5"
               width={18}
               height={18}
             />
@@ -57,7 +57,7 @@ const Footer = () => {
       <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
         <span
-          className="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          className="text-sm text-gray-900 sm:text-center"
           style={{ fontFeatureSettings: `'salt' on` }}
         >
           © 2022{' '}

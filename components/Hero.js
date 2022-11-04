@@ -5,7 +5,7 @@ import HeroForm from './HeroForm'
 
 const Hero = () => {
   return (
-    <div className="container mx-auto px-4 flex relative py-8">
+    <div className="container mx-auto px-4 flex relative md:top-4 md:h-screen">
       <div className="grid gap-4 md:grid-cols-2">
         <div className="flex flex-col justify-center relative z-20 gap-6">
           <h1
@@ -35,7 +35,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col justify-end items-start relative z-20">
+        <div className="flex flex-col justify-center items-start relative z-20 ">
           <HeroForm />
         </div>
       </div>

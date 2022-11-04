@@ -125,7 +125,7 @@ const Stories = () => {
                 {stories[currentReview].details}
               </p>
               <div className="flex items-center md:justify-start">
-                <Link className="py-2 font-bold sm:text-lg" href="#">
+                <Link className="py-2 font-bold text-base" href="#">
                   <div className="flex items-center gap-2">
                     <span>Explore Website</span>
                     <Image
@@ -160,7 +160,7 @@ const Stories = () => {
         </div>
       </div>
       {/* Controls */}
-      <div className="md:absolute md:bottom-0 md:left-0 md:right-[50%] py-8 flex justify-center items-center gap-4 z-30">
+      <div className="md:absolute md:bottom-0 md:left-0 md:right-[50%] py-8 flex justify-center items-center gap-4 z-30 md:py-0">
         <div
           className={`rotate-180 flex items-center justify-center w-8 h-8 rounded-full cursor-pointer ${
             currentReview === 0 ? 'invisible' : ''

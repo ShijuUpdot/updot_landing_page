@@ -17,9 +17,12 @@ export default function Home() {
         <title>Home</title>
       </Head>
       {/* Hero Section */}
+      <Navbar />
       <section className={styles.hero}>
-        <Navbar />
         <Hero />
+      </section>
+      {/* Clients Section */}
+      <section>
         <Clients />
       </section>
       {/* Service Section */}
@@ -28,21 +31,21 @@ export default function Home() {
         <Services />
       </section>
       {/* Success Stories */}
-      <section>
+      <section className="md:py-10">
         <Title>Our Success Stories</Title>
         <Stories />
       </section>
       {/* Trusted By */}
-      <section>
+      <section className="md:py-10">
         <Title>Trusted By</Title>
         <TrustedBy />
       </section>
       {/* Let's Talk */}
-      <section>
+      <section className="md:py-10">
         <Title>Let’s Talk</Title>
         <Contact />
       </section>
-      <section>
+      <section className="md:py-10 bg-[#FAFAFA]">
         <Footer />
       </section>
     </>
