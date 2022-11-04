@@ -6,7 +6,7 @@ const Review = ({ stars, name, desc, image, title }) => {
   return (
     <div>
       <div className="max-w-lg rounded-md bg-white">
-        <div className="flex space-x-0.5 pb-2">
+        <div className="flex space-x-0.5 pb-2 justify-center items-center md:justify-start">
           {[...Array(stars)].map((e, i) => (
             <svg
               key={i}
@@ -23,12 +23,14 @@ const Review = ({ stars, name, desc, image, title }) => {
           ))}
         </div>
         <div className="">
-          <h3 className="font-semibold text-gray-900">{title}</h3>
-          <p className="text-sm font-normal leading-5 text-gray-700 max-w-sm">
+          <h3 className="font-semibold text-gray-900 text-center md:text-start">
+            {title}
+          </h3>
+          <p className="text-sm font-normal leading-5 text-gray-700 max-w-sm text-center md:text-start py-1">
             {desc}
           </p>
         </div>
-        <div className="mt-6 flex items-center space-x-2">
+        <div className="mt-2 flex items-center space-x-2 justify-center md:justify-start">
           <div className="flex flex-shrink-0 rounded-full border border-gray-200">
             <Image
               className="w-8 h-8 object-cover rounded-full"

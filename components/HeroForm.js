@@ -7,17 +7,17 @@ const HeroForm = () => {
   const [companyName, setCompanyName] = useState('')
   const [mobileNumber, setMobileNumber] = useState('')
   const [message, setMessage] = useState('')
-  const [status, setStatus] = useState('Submit')
+
   return (
-    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center py-8 px-6 md:px-12 w-full max-w-lg ml-auto">
-      <h3 className="uppercase text-2xl font-bold text-gray-900 text-center w-full pb-4">
+    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-4 xl:py-6">
+      <h3 className="uppercase lg:text-xl xl:text-2xl font-bold text-gray-900 text-center w-full pb-4">
         Get in Touch
       </h3>
       <form action="#" method="GET" className="w-full">
         <div className="mb-5">
           <label
             htmlFor="name"
-            className="mb-3 text-xl hidden font-medium text-[#1C1C1C]"
+            className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
           >
             Full Name
           </label>
@@ -29,13 +29,13 @@ const HeroForm = () => {
             min="0"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
           />
         </div>
         <div className="mb-5">
           <label
             htmlFor="email"
-            className="mb-3 text-xl hidden font-medium text-[#1C1C1C]"
+            className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
           >
             Email Address
           </label>
@@ -47,13 +47,13 @@ const HeroForm = () => {
             min="0"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
           />
         </div>
         <div className="mb-5">
           <label
             htmlFor="companyName"
-            className="mb-3 text-xl hidden font-medium text-[#1C1C1C]"
+            className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
           >
             Company Name
           </label>
@@ -65,13 +65,13 @@ const HeroForm = () => {
             min="0"
             value={companyName}
             onChange={(e) => setCompanyName(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
           />
         </div>
         <div className="mb-5">
           <label
             htmlFor="mobileNumber"
-            className="mb-3 text-xl hidden font-medium text-[#1C1C1C]"
+            className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
           >
             Mobile Number
           </label>
@@ -83,25 +83,25 @@ const HeroForm = () => {
             min="0"
             value={mobileNumber}
             onChange={(e) => setMobileNumber(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
           />
         </div>
 
         <div className="mb-5">
           <label
             htmlFor="details"
-            className="mb-3 text-xl hidden font-medium text-[#1C1C1C]"
+            className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
           >
             Message
           </label>
           <textarea
-            rows={5}
+            rows={3}
             name="details"
             id="details"
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
           />
         </div>
 
