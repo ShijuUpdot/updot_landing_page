@@ -148,7 +148,12 @@ const Stories = () => {
               src={stories[currentReview].imageDesktop}
               alt="service"
               className="hidden md:block"
-              style={{ width: '100%', objectFit: 'fill', maxWidth: '100%' }}
+              style={{
+                width: 'auto',
+                objectFit: 'fill',
+                maxWidth: '100%',
+                height: '60vh',
+              }}
             />
             <Image
               src={stories[currentReview].imageMobile}

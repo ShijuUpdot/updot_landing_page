@@ -31,7 +31,7 @@ export default function Home() {
         <Services />
       </section>
       {/* Success Stories */}
-      <section className="md:py-10">
+      <section className="md:py-10 px-0">
         <Title>Our Success Stories</Title>
         <Stories />
       </section>
