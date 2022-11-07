@@ -9,7 +9,7 @@ const ServiceCard = ({ children, icon }) => {
         alt="icon"
         width={35}
         height={50}
-        className="inline h-auto"
+        className="inline h-auto w-10"
       />
       {children}
     </div>

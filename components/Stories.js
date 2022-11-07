@@ -18,7 +18,7 @@ const Stories = () => {
   const [currentReview, setCurrentReview] = useState(0)
   const stories = [
     {
-      name: 'RE/MAX Website Design',
+      name: 'RE/MAX Website',
       imageDesktop: MockupImg1,
       imageMobile: MockupMobImg1,
       details: (
@@ -31,13 +31,13 @@ const Stories = () => {
       review: {
         name: 'Shreya',
         desc: 'Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper pretium ornare.',
-        title: 'Best Web devlopment Agency in Market',
+        title: 'Best Web development Agency in Market',
         image: Avatar1,
         stars: 5,
       },
     },
     {
-      name: 'BOOKYAN Website Design',
+      name: 'BOOKYAN Website',
       imageDesktop: MockupImg2,
       imageMobile: MockupMobImg2,
       details: (
@@ -56,7 +56,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'ENVNT Website Design',
+      name: 'ENVNT Website',
       imageDesktop: MockupImg3,
       imageMobile: MockupMobImg3,
       details: (
@@ -75,7 +75,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'TAIBA Website Design',
+      name: 'TAIBA Website',
       imageDesktop: MockupImg4,
       imageMobile: MockupMobImg4,
       details: (
@@ -120,6 +120,8 @@ const Stories = () => {
             <div className="md:px-0 px-4">
               <h3 className="text-4xl sm:text-4xl font-semibold flex flex-col text-gray-900">
                 {stories[currentReview].name}
+                <br />
+                Design
               </h3>
               <p className="text-sm sm:text-lg text-gray-600">
                 {stories[currentReview].details}

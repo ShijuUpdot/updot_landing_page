@@ -6,11 +6,13 @@ const IconButton = ({ children, icon, style, onClick, order = 1 }) => {
   return (
     <button
       type="button"
-      className="py-3 px-6 flex justify-center items-center  bg-gray-900 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-sm md:text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg gap-2"
+      className={`py-3 px-6 flex justify-center items-center  bg-gray-900 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-sm md:text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg gap-2 ${
+        order == 1 ? 'flex-row-reverse' : ''
+      } `}
       style={style}
       onClick={onClick}
     >
-      <span className={`order-${order}`}>{children}</span>
+      {children}
       <Image src={icon} alt="icon" width={20} height={20} />
     </button>
   )

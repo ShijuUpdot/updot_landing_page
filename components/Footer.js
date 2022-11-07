@@ -12,17 +12,37 @@ const Footer = () => {
             href="https://updot.in/"
             className="flex items-center flex-shrink-0 "
           >
-            <Image src="/logo.svg" alt="Updot Logo" width={50} height={50} />
+            <Image
+              src="/logo.svg"
+              alt="Updot Logo"
+              width={50}
+              height={50}
+              className="w-auto h-14"
+            />
           </Link>
           {/* For Mobile View */}
           <div className="flex-col w-fit mt-8 md:hidden flex">
-            <IconButton icon={'/icons/web.svg'} order={2}>
+            <IconButton
+              icon={'/icons/web.svg'}
+              order={1}
+              onClick={() => {
+                window.open('https://updot.in/', '_blank')
+              }}
+              style={{ borderRadius: '1rem' }}
+            >
               Visit Website
             </IconButton>
           </div>
         </div>
         <div className="flex-col w-fit text-center self-center justify-self-center hidden md:flex">
-          <IconButton icon={'/icons/web.svg'} order={2}>
+          <IconButton
+            icon={'/icons/web.svg'}
+            order={1}
+            onClick={() => {
+              window.open('https://updot.in/', '_blank')
+            }}
+            style={{ borderRadius: '1rem' }}
+          >
             Visit Website
           </IconButton>
         </div>

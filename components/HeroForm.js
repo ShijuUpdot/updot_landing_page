@@ -9,7 +9,7 @@ const HeroForm = () => {
   const [message, setMessage] = useState('')
 
   return (
-    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-4 xl:py-6">
+    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-6 xl:py-6 drop-shadow-xl">
       <h3 className="uppercase lg:text-xl xl:text-2xl font-bold text-gray-900 text-center w-full pb-4">
         Get in Touch
       </h3>
@@ -29,7 +29,7 @@ const HeroForm = () => {
             min="0"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
         </div>
         <div className="mb-5">
@@ -47,7 +47,7 @@ const HeroForm = () => {
             min="0"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
         </div>
         <div className="mb-5">
@@ -65,7 +65,7 @@ const HeroForm = () => {
             min="0"
             value={companyName}
             onChange={(e) => setCompanyName(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
         </div>
         <div className="mb-5">
@@ -83,7 +83,7 @@ const HeroForm = () => {
             min="0"
             value={mobileNumber}
             onChange={(e) => setMobileNumber(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
         </div>
 
@@ -101,11 +101,11 @@ const HeroForm = () => {
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-3 px-6 text-base md:text-lg xl:text-xl font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
         </div>
 
-        <div className="px-2 py-3 w-fit mx-auto">
+        <div className="px-2 py-1 w-fit mx-auto">
           <IconButton icon="/icons/arrow_right.svg" order={2}>
             Send Message
           </IconButton>

@@ -5,18 +5,19 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="container mx-auto relative bg-[#f5f5f5] md:absolute top-0 left-0 right-0 z-50">
+    <nav className="container mx-auto relative bg-[#f5f5f5] md:bg-transparent md:absolute top-0 left-0 right-0 z-50">
       <div className="max-w-full mx-auto px-4">
-        <div
-          className="flex items-center justify-between"
-          style={{
-            height: '5rem',
-          }}
-        >
+        <div className="flex items-center justify-between py-2">
           <div className="w-full justify-between flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <Link className="flex-shrink-0" href="#">
-                <Image src="/logo.svg" alt="logo" width={65} height={65} />
+                <Image
+                  src="/logo.svg"
+                  alt="logo"
+                  width={65}
+                  height={65}
+                  className="h-14 w-auto"
+                />
               </Link>
               <div className="px-4 hidden md:block">
                 <hr className="h-8 border-[#1C1C1C] border-l-2" />

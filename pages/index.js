@@ -22,7 +22,7 @@ export default function Home() {
         <Hero />
       </section>
       {/* Clients Section */}
-      <section>
+      <section className="bg-[#f5f5f5]">
         <Clients />
       </section>
       {/* Service Section */}
@@ -31,17 +31,17 @@ export default function Home() {
         <Services />
       </section>
       {/* Success Stories */}
-      <section className="md:py-10 px-0">
+      <section className="pt-4 md:py-10 px-0">
         <Title>Our Success Stories</Title>
         <Stories />
       </section>
       {/* Trusted By */}
-      <section className="md:py-10">
+      <section className="pt-4 md:py-10">
         <Title>Trusted By</Title>
         <TrustedBy />
       </section>
       {/* Let's Talk */}
-      <section className="md:py-10">
+      <section className="pt-4 md:py-10">
         <Title>Let’s Talk</Title>
         <Contact />
       </section>
