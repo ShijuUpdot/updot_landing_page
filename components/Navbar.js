@@ -47,7 +47,13 @@ export default function Navbar() {
                     </div>
                   </Link>
                 </div>
-                <IconButton icon={'/icons/arrow_right.svg'} order={2}>
+                <IconButton
+                  icon={'/icons/arrow_right.svg'}
+                  order={2}
+                  onClick={() => {
+                    window.location.href = '#contact'
+                  }}
+                >
                   Lets talk
                 </IconButton>
               </div>

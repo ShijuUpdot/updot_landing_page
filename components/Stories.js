@@ -118,7 +118,7 @@ const Stories = () => {
         <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
           <div className="flex flex-col justify-center z-20 gap-6 pl-0 md:pl-[19%] xl:pl-[20.5%] order-1 md:order-first ">
             <div className="md:px-0 px-4">
-              <h3 className="text-4xl sm:text-4xl font-semibold flex flex-col text-gray-900">
+              <h3 className="text-2xl sm:text-4xl font-semibold flex flex-col text-gray-900">
                 {stories[currentReview].name}
                 <br />
                 Design
@@ -167,7 +167,7 @@ const Stories = () => {
         </div>
       </div>
       {/* Controls */}
-      <div className="md:absolute md:bottom-0 md:left-0 md:right-[50%] py-8 flex justify-center items-center gap-4 z-30 md:py-0">
+      <div className="md:absolute md:bottom-0 md:left-0 md:right-[50%] py-8 flex justify-center items-center gap-4 z-30 md:py-0 select-none">
         <div
           className={`rotate-180 flex items-center justify-center w-8 h-8 rounded-full cursor-pointer ${
             currentReview === 0 ? 'invisible' : ''

@@ -31,11 +31,17 @@ const Contact = () => {
                   height={20}
                 />
               </div>
-              <p className="ml-2 text-[#090914] text-base">
-                No.32, next to spring valley club, Bengaluru,
-                <br />
-                Karnataka 560090
-              </p>
+              <Link
+                href="https://goo.gl/maps/TVehL7ZciUDdqC5j9"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <p className="ml-2 text-[#090914] text-base">
+                  No.32, next to spring valley club, Bengaluru,
+                  <br />
+                  Karnataka 560090
+                </p>
+              </Link>
             </div>
           </div>
           <hr className="border-[#95959F] mb-4 max-w-xl" />

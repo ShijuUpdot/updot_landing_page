@@ -48,7 +48,7 @@ const Services = () => {
                   alt="phone"
                   width={18}
                   height={18}
-                  className="inline invert"
+                  className="inline invert select-none"
                 />
               </div>
             </Link>

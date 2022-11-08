@@ -31,7 +31,7 @@ export default function Home() {
         <Services />
       </section>
       {/* Success Stories */}
-      <section className="pt-4 md:py-10 px-0">
+      <section className="pt-4 md:py-10 px-0" id="stories">
         <Title>Our Success Stories</Title>
         <Stories />
       </section>
@@ -41,7 +41,7 @@ export default function Home() {
         <TrustedBy />
       </section>
       {/* Let's Talk */}
-      <section className="pt-4 md:py-10">
+      <section className="pt-4 md:py-10" id="contact">
         <Title>Let’s Talk</Title>
         <Contact />
       </section>

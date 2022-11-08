@@ -12,12 +12,9 @@ const contactSchema = Yup.object().shape({
     .required('Name cannot be empty'),
   email: Yup.string().email('Invalid email').required('Email cannot be empty'),
   message: Yup.string().min(2, 'Too Short!').max(500, 'Too Long!'),
-  companyName: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Company Name cannot be empty'),
+  companyName: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!'),
   companyWebsite: Yup.string().url('Invalid URL'),
-  services: Yup.array().min(1, 'Please select at least one service'),
+  services: Yup.array(),
 })
 
 const ContactForm = () => {

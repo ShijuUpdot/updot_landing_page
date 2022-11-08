@@ -23,7 +23,7 @@ const Hero = () => {
 
           <div className="flex">
             <Link
-              href="#"
+              href="#stories"
               className="py-2 px-4 rounded-lg bg-gray-900 border-2 border-transparent text-white text-base sm:text-lg mr-4 hover:bg-gray-800"
             >
               Read Success Stories

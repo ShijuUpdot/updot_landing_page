@@ -117,8 +117,7 @@ const TrustedBy = () => {
               src={item.logo}
               alt={item.name}
               style={{
-                objectFit: 'cover',
-                width: '100%',
+                objectFit: 'contain',
                 maxWidth: '100%',
               }}
             />
