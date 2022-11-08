@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import IconButton from './IconButton'
-import { useForm, ValidationError } from '@formspree/react'
+import { useForm } from '@formspree/react'
 import Thanks from './Thanks'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
@@ -8,6 +8,7 @@ import FormValError from './FormValError'
 
 const HeroForm = () => {
   const [state, handleSubmit] = useForm('xgeqrepg')
+  const [showThanks, setShowThanks] = useState(false)
 
   const heroFormSchema = Yup.object().shape({
     name: Yup.string()
@@ -25,7 +26,7 @@ const HeroForm = () => {
     message: Yup.string().min(2, 'Too Short!').max(500, 'Too Long!'),
   })
 
-  if (state.succeeded) {
+  if (state.succeeded && showThanks) {
     return <Thanks />
   }
 
@@ -46,6 +47,10 @@ const HeroForm = () => {
         onSubmit={(values, { setSubmitting }) => {
           handleSubmit(values)
           setSubmitting(false)
+          setShowThanks(true)
+          setTimeout(() => {
+            setShowThanks(false)
+          }, 7000)
         }}
       >
         {({

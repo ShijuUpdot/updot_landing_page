@@ -113,7 +113,7 @@ const Stories = () => {
   }
 
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative px-2 md:px-0">
       <div className="flex">
         <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
           <div className="flex flex-col justify-center z-20 gap-6 pl-0 md:pl-[19%] xl:pl-[20.5%] order-1 md:order-first ">

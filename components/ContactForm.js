@@ -22,6 +22,7 @@ const contactSchema = Yup.object().shape({
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm('mrgdrgjp')
+  const [showThanks, setShowThanks] = useState(false)
 
   if (state.succeeded) {
     return <Thanks />
@@ -41,6 +42,10 @@ const ContactForm = () => {
       onSubmit={(values, { setSubmitting }) => {
         handleSubmit(values)
         setSubmitting(false)
+        setShowThanks(true)
+        setTimeout(() => {
+          setShowThanks(false)
+        }, 7000)
       }}
     >
       {({
