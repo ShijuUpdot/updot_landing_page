@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import IconButton from './IconButton'
+import { useForm, ValidationError } from '@formspree/react'
+import Thanks from './Thanks'
 
 const HeroForm = () => {
   const [name, setName] = useState('')
@@ -7,13 +9,18 @@ const HeroForm = () => {
   const [companyName, setCompanyName] = useState('')
   const [mobileNumber, setMobileNumber] = useState('')
   const [message, setMessage] = useState('')
+  const [state, handleSubmit] = useForm('xgeqrepg')
+
+  if (state.succeeded) {
+    return <Thanks />
+  }
 
   return (
     <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-6 xl:py-6 drop-shadow-xl">
       <h3 className="uppercase lg:text-xl xl:text-2xl font-bold text-gray-900 text-center w-full pb-4">
         Get in Touch
       </h3>
-      <form action="#" method="GET" className="w-full">
+      <form onSubmit={handleSubmit} className="w-full">
         <div className="mb-5">
           <label
             htmlFor="name"
@@ -31,6 +38,7 @@ const HeroForm = () => {
             onChange={(e) => setName(e.target.value)}
             className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
         <div className="mb-5">
           <label
@@ -49,6 +57,7 @@ const HeroForm = () => {
             onChange={(e) => setEmail(e.target.value)}
             className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
         <div className="mb-5">
           <label
@@ -66,6 +75,11 @@ const HeroForm = () => {
             value={companyName}
             onChange={(e) => setCompanyName(e.target.value)}
             className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
+          />
+          <ValidationError
+            prefix="Company Name"
+            field="companyName"
+            errors={state.errors}
           />
         </div>
         <div className="mb-5">
@@ -85,6 +99,11 @@ const HeroForm = () => {
             onChange={(e) => setMobileNumber(e.target.value)}
             className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
+          <ValidationError
+            prefix="Mobile Number"
+            field="mobileNumber"
+            errors={state.errors}
+          />
         </div>
 
         <div className="mb-5">
@@ -103,10 +122,15 @@ const HeroForm = () => {
             onChange={(e) => setMessage(e.target.value)}
             className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
           />
+          <ValidationError
+            prefix="Message"
+            field="details"
+            errors={state.errors}
+          />
         </div>
 
         <div className="px-2 py-1 w-fit mx-auto">
-          <IconButton icon="/icons/arrow_right.svg" order={2}>
+          <IconButton icon="/icons/arrow_right.svg" order={2} type="submit">
             Send Message
           </IconButton>
         </div>
