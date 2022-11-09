@@ -118,12 +118,12 @@ const Stories = () => {
         <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full">
           <div className="flex flex-col justify-center z-20 gap-6 pl-0 md:pl-[19%] xl:pl-[20.5%] order-1 md:order-first ">
             <div className="md:px-0 px-4">
-              <h3 className="text-2xl sm:text-4xl font-semibold flex flex-col text-gray-900">
+              <h3 className="text-xl sm:text-4xl font-semibold flex flex-col text-gray-900">
                 {stories[currentReview].name}
-                <br />
+                <br className="hidden md:block" />
                 Design
               </h3>
-              <p className="text-sm sm:text-lg text-gray-600">
+              <p className="text-sm sm:text-lg text-gray-600 pt-2 md:pt-0">
                 {stories[currentReview].details}
               </p>
               <div className="flex items-center md:justify-start">

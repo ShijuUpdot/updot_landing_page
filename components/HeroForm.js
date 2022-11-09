@@ -12,6 +12,7 @@ const HeroForm = () => {
 
   const heroFormSchema = Yup.object().shape({
     name: Yup.string()
+      .matches(/^[a-zA-Z ]*$/, 'Only letters and spaces are allowed')
       .min(2, 'Too Short!')
       .max(50, 'Too Long!')
       .required('Name cannot be empty'),
@@ -19,7 +20,9 @@ const HeroForm = () => {
       .email('Invalid email')
       .required('Email cannot be empty'),
     companyName: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!'),
-    mobileNumber: Yup.string().required('Mobile Number cannot be empty'),
+    mobileNumber: Yup.string()
+      .required('Mobile Number cannot be empty')
+      .matches(/^[0-9]*$/, 'Only numbers are allowed'),
     message: Yup.string().min(2, 'Too Short!').max(500, 'Too Long!'),
   })
 

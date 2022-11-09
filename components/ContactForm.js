@@ -7,6 +7,7 @@ import FormValError from './FormValError'
 
 const contactSchema = Yup.object().shape({
   fullName: Yup.string()
+    .matches(/^[a-zA-Z ]*$/, 'Only letters and spaces are allowed')
     .min(2, 'Too Short!')
     .max(50, 'Too Long!')
     .required('Name cannot be empty'),
