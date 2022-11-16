@@ -15,14 +15,25 @@ export default function Home() {
     <>
       <Head>
         <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
+
       {/* Hero Section */}
       <Navbar />
       <section className={styles.hero}>
         <Hero />
       </section>
       {/* Clients Section */}
-      <section className="bg-[#f5f5f5]">
+      <section className="bg-[#f5f5f5] px-0">
         <Clients />
       </section>
       {/* Service Section */}

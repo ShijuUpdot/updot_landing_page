@@ -72,7 +72,7 @@ const ContactForm = () => {
               value={values.name}
               onChange={handleChange}
               onBlur={handleBlur}
-              className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+              className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
             />
             <FormValError>
               {errors.fullName && touched.fullName && errors.fullName}
@@ -93,7 +93,7 @@ const ContactForm = () => {
               value={values.email}
               onChange={handleChange}
               onBlur={handleBlur}
-              className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+              className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
             />
             <FormValError>
               {errors.email && touched.email && errors.email}
@@ -114,7 +114,7 @@ const ContactForm = () => {
               value={values.companyName}
               onChange={handleChange}
               onBlur={handleBlur}
-              className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+              className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
             />
             <FormValError>
               {errors.companyName && touched.companyName && errors.companyName}
@@ -135,7 +135,7 @@ const ContactForm = () => {
               value={values.companyWebsite}
               onChange={handleChange}
               onBlur={handleBlur}
-              className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+              className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
             />
             <FormValError>
               {errors.companyWebsite &&
@@ -273,7 +273,7 @@ const ContactForm = () => {
               value={values.message}
               onChange={handleChange}
               onBlur={handleBlur}
-              className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+              className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
             />
             <FormValError>
               {errors.message && touched.message && errors.message}
@@ -283,7 +283,7 @@ const ContactForm = () => {
           <div className="pb-5">
             <button
               type="submit"
-              className="hover:shadow-form rounded-xl bg-gray-900 py-2 px-16 text-center text-lg font-semibold text-white outline-none"
+              className="hover:shadow-form rounded-lg bg-gray-900 py-2 px-16 text-center text-lg font-semibold text-white outline-none"
             >
               Submit
             </button>

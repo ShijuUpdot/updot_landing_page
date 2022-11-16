@@ -15,6 +15,9 @@ module.exports = {
           900: '#18181B', // <-- This is the new color
         },
       },
+      fontFamily: {
+        body: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

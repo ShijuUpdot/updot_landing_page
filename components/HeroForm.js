@@ -31,8 +31,8 @@ const HeroForm = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-6 xl:py-6 drop-shadow-xl">
-      <h3 className="uppercase lg:text-xl xl:text-2xl font-bold text-gray-900 text-center w-full pb-4">
+    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-4 xl:py-4 shadow-2xl">
+      <h3 className="uppercase lg:text-lg xl:text-xl font-bold text-gray-900 text-center w-full pb-4">
         Get in Touch
       </h3>
       <Formik
@@ -64,7 +64,7 @@ const HeroForm = () => {
           /* and other goodies */
         }) => (
           <Form onSubmit={handleSubmit} className="w-full">
-            <div className="mb-5">
+            <div className="mb-5 md:mb-4">
               <label
                 htmlFor="name"
                 className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
@@ -79,16 +79,16 @@ const HeroForm = () => {
                 value={values.name}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
+                className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white py-3 px-2 xl:py-3 xl:px-3 text-sm font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
               />
               <FormValError>
                 {errors.name && touched.name && errors.name}
               </FormValError>
             </div>
-            <div className="mb-5">
+            <div className="mb-5 md:mb-4">
               <label
                 htmlFor="email"
-                className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
+                className="mb-3 text-sm md:text-xl hidden font-medium text-[#1C1C1C]"
               >
                 Email Address
               </label>
@@ -100,16 +100,16 @@ const HeroForm = () => {
                 value={values.email}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
+                className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white py-3 px-2 xl:py-3 xl:px-3 text-sm font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
               />
               <FormValError>
                 {errors.email && touched.email && errors.email}
               </FormValError>
             </div>
-            <div className="mb-5">
+            <div className="mb-5 md:mb-4">
               <label
                 htmlFor="companyName"
-                className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
+                className="mb-1 text-sm md:text-xl hidden font-medium text-[#1C1C1C]"
               >
                 Company Name
               </label>
@@ -121,7 +121,7 @@ const HeroForm = () => {
                 value={values.companyName}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
+                className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white py-3 px-2 xl:py-3 xl:px-3 text-sm font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
               />
               <FormValError>
                 {errors.companyName &&
@@ -129,10 +129,10 @@ const HeroForm = () => {
                   errors.companyName}
               </FormValError>
             </div>
-            <div className="mb-5">
+            <div className="mb-5 md:mb-4">
               <label
                 htmlFor="mobileNumber"
-                className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
+                className="mb-1 text-sm md:text-xl hidden font-medium text-[#1C1C1C]"
               >
                 Mobile Number
               </label>
@@ -144,7 +144,7 @@ const HeroForm = () => {
                 value={values.mobileNumber}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
+                className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white py-3 px-2 xl:py-3 xl:px-3 text-sm font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
               />
               <FormValError>
                 {errors.mobileNumber &&
@@ -153,10 +153,10 @@ const HeroForm = () => {
               </FormValError>
             </div>
 
-            <div className="mb-5">
+            <div className="mb-1 md:mb-0">
               <label
                 htmlFor="message"
-                className="mb-3 text-base md:text-xl hidden font-medium text-[#1C1C1C]"
+                className="mb-1 text-sm md:text-xl hidden font-medium text-[#1C1C1C]"
               >
                 Message
               </label>
@@ -168,14 +168,14 @@ const HeroForm = () => {
                 value={values.message}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                className="w-full appearance-none rounded-xl border border-[#1C1C1C] bg-white py-2 px-2 xl:py-3 xl:px-3 text-base font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
+                className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white py-3 px-2 xl:py-3 xl:px-3 text-sm font-medium text-[#6D6969] outline-none focus:border-[#1C1C1C] focus:shadow-md placeholder-[#6D6969]"
               />
               <FormValError>
                 {errors.message && touched.message && errors.message}
               </FormValError>
             </div>
 
-            <div className="px-2 py-1 w-fit mx-auto">
+            <div className="px-0 py-1 w-fit mx-auto">
               <IconButton icon="/icons/arrow_right.svg" order={2} type="submit">
                 Send Message
               </IconButton>
