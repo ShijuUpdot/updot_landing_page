@@ -21,6 +21,7 @@ const Stories = () => {
       name: 'RE/MAX Website',
       imageDesktop: MockupImg1,
       imageMobile: MockupMobImg1,
+      link: 'https://www.remax.in/',
       details: (
         <>
           We worked with Remax on their website
@@ -40,6 +41,7 @@ const Stories = () => {
       name: 'BOOKYAN Website',
       imageDesktop: MockupImg2,
       imageMobile: MockupMobImg2,
+      link: 'https://bookyanholidays.com/',
       details: (
         <>
           We worked with Bookyan on their website
@@ -59,6 +61,7 @@ const Stories = () => {
       name: 'ENVNT Website',
       imageDesktop: MockupImg3,
       imageMobile: MockupMobImg3,
+      link: 'https://envnt.co/',
       details: (
         <>
           We worked with Envnt on their website
@@ -78,6 +81,7 @@ const Stories = () => {
       name: 'TAIBA Website',
       imageDesktop: MockupImg4,
       imageMobile: MockupMobImg4,
+      link: 'https://taibarare.com/',
       details: (
         <>
           We worked with TAIBA on their website
@@ -127,7 +131,10 @@ const Stories = () => {
                 {stories[currentReview].details}
               </p>
               <div className="flex items-center md:justify-start">
-                <Link className="py-2 font-bold text-base" href="#">
+                <Link
+                  className="py-2 font-bold text-base"
+                  href={stories[currentReview].link}
+                >
                   <div className="flex items-center gap-2">
                     <span>Explore Website</span>
                     <Image

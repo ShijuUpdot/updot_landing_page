@@ -23,7 +23,10 @@ export default function Navbar() {
                 <hr className="h-8 border-[#1C1C1C] border-l-2" />
               </div>
               <div className="hidden md:block">
-                <Link href={'#'} className="text-sm font-normal text-[#333334]">
+                <Link
+                  href={'mailto:hello@updot.in'}
+                  className="text-sm font-normal text-[#333334]"
+                >
                   hello@updot.in
                 </Link>
               </div>

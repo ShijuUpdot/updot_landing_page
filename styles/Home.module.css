@@ -11,6 +11,10 @@
   padding-left: '20%';
 }
 
+.clients{
+  background: linear-gradient(0deg, rgba(232, 232, 232, 0.1) 4.84%, #F4F4F4 48.88%, rgba(232, 232, 232, 0.4) 94.78%);
+}
+
 @media screen and (max-width: 768px) {
   .offset {
     padding-left: '0%';

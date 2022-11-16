@@ -116,6 +116,8 @@ const TrustedBy = () => {
             <Image
               src={item.logo}
               alt={item.name}
+              width={130}
+              height={130}
               style={{
                 objectFit: 'contain',
                 maxWidth: '100%',

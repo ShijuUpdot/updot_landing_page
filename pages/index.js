@@ -33,7 +33,7 @@ export default function Home() {
         <Hero />
       </section>
       {/* Clients Section */}
-      <section className="bg-[#f5f5f5] px-0">
+      <section className={styles.clients}>
         <Clients />
       </section>
       {/* Service Section */}
