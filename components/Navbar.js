@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="container mx-auto relative bg-[#f5f5f5] md:bg-transparent md:absolute top-0 left-0 right-0 z-50 px-2 md:px-10">
+    <nav className="w-full relative bg-[#f5f5f5] ">
       <div className="max-w-full mx-auto px-4">
         <div className="flex items-center justify-between py-2">
           <div className="w-full justify-between flex items-center">

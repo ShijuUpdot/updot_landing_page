@@ -29,9 +29,10 @@ export default function Home() {
           rel="stylesheet"
         ></link>
       </Head>
-
+      <section className="bg-[#f5f5f5] ">
+        <Navbar />
+      </section>
       {/* Hero Section */}
-      <Navbar />
       <section className={styles.hero}>
         <Hero />
       </section>
