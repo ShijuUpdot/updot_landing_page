@@ -12,6 +12,9 @@ const contactSchema = Yup.object().shape({
     .max(50, 'Too Long!')
     .required('Name cannot be empty'),
   email: Yup.string().email('Invalid email').required('Email cannot be empty'),
+  mobileNumber: Yup.string()
+    .required('Mobile Number cannot be empty')
+    .matches(/^[0-9]*$/, 'Only numbers are allowed'),
   message: Yup.string().min(2, 'Too Short!').max(500, 'Too Long!'),
   companyName: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!'),
   companyWebsite: Yup.string().url('Invalid URL'),
@@ -31,6 +34,7 @@ const ContactForm = () => {
       initialValues={{
         fullName: '',
         email: '',
+        mobileNumber: '',
         // companyName: '',
         // companyWebsite: '',
         // services: [],
@@ -97,6 +101,29 @@ const ContactForm = () => {
             />
             <FormValError>
               {errors.email && touched.email && errors.email}
+            </FormValError>
+          </div>
+          <div className="mb-5">
+            <label
+              htmlFor="email"
+              className="mb-3 block text-base md:text-lg font-medium text-[#1C1C1C]"
+            >
+              Mobile Number
+            </label>
+            <Field
+              type="tel"
+              name="mobileNumber"
+              placeholder="Mobile Number"
+              min="0"
+              value={values.mobileNumber}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              className="w-full appearance-none rounded-lg border border-[#1C1C1C] bg-white p-2 xl:p-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#1C1C1C] focus:shadow-md"
+            />
+            <FormValError>
+              {errors.mobileNumber &&
+                touched.mobileNumber &&
+                errors.mobileNumber}
             </FormValError>
           </div>
           {/* <div className="mb-5">

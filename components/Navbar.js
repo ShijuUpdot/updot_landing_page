@@ -46,7 +46,7 @@ export default function Navbar() {
                         height={18}
                         className="inline"
                       />
-                      <span>+91&nbsp;7353311555</span>
+                      <span>+91&nbsp;7907589188</span>
                     </div>
                   </Link>
                 </div>

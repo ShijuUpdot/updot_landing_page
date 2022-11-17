@@ -64,7 +64,7 @@ export default function Home() {
         <Footer />
       </section>
       <FloatingButton
-        link={'https://api.whatsapp.com/send?phone=+91-7353311555'}
+        link={'https://api.whatsapp.com/send?phone=+91-7907589188'}
       >
         <Image
           src={wplogo}
