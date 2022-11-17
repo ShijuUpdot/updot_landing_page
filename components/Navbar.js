@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div className="block">
                   <Link
                     className="text-black hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-                    href="tel:917353311555"
+                    href="tel:917907589188"
                   >
                     <div className="flex items-center gap-3">
                       <Image

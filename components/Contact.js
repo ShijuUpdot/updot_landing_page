@@ -59,10 +59,10 @@ const Contact = () => {
                 />
               </div>
               <Link
-                href="tel:+917353311555"
+                href="tel:+917907589188"
                 className="ml-2 text-[#090914] text-base"
               >
-                +91 7353311555
+                +91 7907589188
               </Link>
             </div>
           </div>
