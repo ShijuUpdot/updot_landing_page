@@ -23,7 +23,7 @@ const Review = ({ stars, name, desc, image, title }) => {
           ))}
         </div>
         <div className="">
-          <h3 className="font-semibold text-gray-900 text-center md:text-start">
+          <h3 className="font-semibold text-gray-900 text-center md:text-start mb-2">
             {title}
           </h3>
           <p className="text-sm font-normal leading-5 text-gray-700 max-w-sm text-center md:text-start py-1">

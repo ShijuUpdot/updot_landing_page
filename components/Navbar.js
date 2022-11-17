@@ -5,12 +5,12 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="container mx-auto relative bg-[#f5f5f5] md:bg-transparent md:absolute top-0 left-0 right-0 z-50 px-2 md:px-0">
+    <nav className="container mx-auto relative bg-[#f5f5f5] md:bg-transparent md:absolute top-0 left-0 right-0 z-50 px-2 md:px-10">
       <div className="max-w-full mx-auto px-4">
         <div className="flex items-center justify-between py-2">
           <div className="w-full justify-between flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <Link className="flex-shrink-0" href="#">
+              <Link className="flex-shrink-0" href="/">
                 <Image
                   src="/logo.svg"
                   alt="logo"
@@ -33,9 +33,9 @@ export default function Navbar() {
             </div>
             <div>
               <div className="ml-10 flex items-center space-x-10">
-                <div className="hidden md:block">
+                <div className="block">
                   <Link
-                    className="text-black hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium hidden md:block"
+                    className="text-black hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
                     href="tel:917353311555"
                   >
                     <div className="flex items-center gap-3">
@@ -50,15 +50,17 @@ export default function Navbar() {
                     </div>
                   </Link>
                 </div>
-                <IconButton
-                  icon={'/icons/arrow_right.svg'}
-                  order={2}
-                  onClick={() => {
-                    window.location.href = '#contact'
-                  }}
-                >
-                  Lets talk
-                </IconButton>
+                <div className="hidden md:block">
+                  <IconButton
+                    icon={'/icons/arrow_right.svg'}
+                    order={2}
+                    onClick={() => {
+                      window.location.href = '#contact'
+                    }}
+                  >
+                    Lets talk
+                  </IconButton>
+                </div>
               </div>
             </div>
           </div>

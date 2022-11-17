@@ -39,9 +39,9 @@ const HeroForm = () => {
         initialValues={{
           name: '',
           email: '',
-          companyName: '',
+          // companyName: '',
           mobileNumber: '',
-          message: '',
+          // message: '',
         }}
         validationSchema={heroFormSchema}
         onSubmit={(values, { setSubmitting }) => {
@@ -106,7 +106,7 @@ const HeroForm = () => {
                 {errors.email && touched.email && errors.email}
               </FormValError>
             </div>
-            <div className="mb-5 md:mb-4">
+            {/* <div className="mb-5 md:mb-4">
               <label
                 htmlFor="companyName"
                 className="mb-1 text-sm md:text-xl hidden font-medium text-[#1C1C1C]"
@@ -128,7 +128,7 @@ const HeroForm = () => {
                   touched.companyName &&
                   errors.companyName}
               </FormValError>
-            </div>
+            </div> */}
             <div className="mb-5 md:mb-4">
               <label
                 htmlFor="mobileNumber"
@@ -153,7 +153,7 @@ const HeroForm = () => {
               </FormValError>
             </div>
 
-            <div className="mb-1 md:mb-0">
+            {/* <div className="mb-1 md:mb-2">
               <label
                 htmlFor="message"
                 className="mb-1 text-sm md:text-xl hidden font-medium text-[#1C1C1C]"
@@ -173,11 +173,11 @@ const HeroForm = () => {
               <FormValError>
                 {errors.message && touched.message && errors.message}
               </FormValError>
-            </div>
+            </div> */}
 
             <div className="px-0 py-1 w-fit mx-auto">
               <IconButton icon="/icons/arrow_right.svg" order={2} type="submit">
-                Send Message
+                Get Proposal
               </IconButton>
             </div>
           </Form>

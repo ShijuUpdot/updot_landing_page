@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Clients from '../components/Clients'
 import Contact from '../components/Contact'
+import FloatingButton from '../components/floating_button'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
@@ -9,6 +10,8 @@ import Stories from '../components/Stories'
 import Title from '../components/Title'
 import TrustedBy from '../components/TrustedBy'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
+import wplogo from '../assets/whatsapp.svg'
 
 export default function Home() {
   return (
@@ -33,7 +36,7 @@ export default function Home() {
         <Hero />
       </section>
       {/* Clients Section */}
-      <section className={styles.clients}>
+      <section>
         <Clients />
       </section>
       {/* Service Section */}
@@ -47,7 +50,7 @@ export default function Home() {
         <Stories />
       </section>
       {/* Trusted By */}
-      <section className="pt-4 md:py-10">
+      <section className="pt-4 mb:pt-0 md:pb-10">
         <Title>Trusted By</Title>
         <TrustedBy />
       </section>
@@ -59,6 +62,17 @@ export default function Home() {
       <section className="md:py-10 bg-[#FAFAFA]">
         <Footer />
       </section>
+      <FloatingButton
+        link={'https://api.whatsapp.com/send?phone=+91-7353311555'}
+      >
+        <Image
+          src={wplogo}
+          width={'50'}
+          height={'50'}
+          alt={'whatsapp logo'}
+          className="opacity-75 hover:opacity-100 transition-opacity ease-linear"
+        />
+      </FloatingButton>
     </>
   )
 }

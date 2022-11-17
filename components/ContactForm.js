@@ -31,10 +31,10 @@ const ContactForm = () => {
       initialValues={{
         fullName: '',
         email: '',
-        companyName: '',
-        companyWebsite: '',
-        services: [],
-        message: '',
+        // companyName: '',
+        // companyWebsite: '',
+        // services: [],
+        // message: '',
       }}
       validationSchema={contactSchema}
       onSubmit={(values, { setSubmitting }) => {
@@ -56,7 +56,7 @@ const ContactForm = () => {
         isSubmitting,
         /* and other goodies */
       }) => (
-        <Form onSubmit={handleSubmit} className="w-full pl-0 md:pl-4">
+        <Form onSubmit={handleSubmit} className="w-full">
           <div className="mb-5">
             <label
               htmlFor="fullName"
@@ -99,7 +99,7 @@ const ContactForm = () => {
               {errors.email && touched.email && errors.email}
             </FormValError>
           </div>
-          <div className="mb-5">
+          {/* <div className="mb-5">
             <label
               htmlFor="companyName"
               className="mb-3 block text-base md:text-lg font-medium text-[#1C1C1C]"
@@ -119,8 +119,8 @@ const ContactForm = () => {
             <FormValError>
               {errors.companyName && touched.companyName && errors.companyName}
             </FormValError>
-          </div>
-          <div className="mb-5">
+          </div> */}
+          {/* <div className="mb-5">
             <label
               htmlFor="companyWebsite"
               className="mb-3 block text-base md:text-lg font-medium text-[#1C1C1C]"
@@ -142,8 +142,8 @@ const ContactForm = () => {
                 touched.companyWebsite &&
                 errors.companyWebsite}
             </FormValError>
-          </div>
-          <div className="mb-5">
+          </div> */}
+          {/* <div className="mb-5">
             <label
               htmlFor="contactService"
               className="mb-3 block text-base md:text-lg font-medium text-[#1C1C1C]"
@@ -256,9 +256,9 @@ const ContactForm = () => {
             <FormValError>
               {errors.services && touched.services && errors.services}
             </FormValError>
-          </div>
+          </div> */}
 
-          <div className="mb-3">
+          {/* <div className="mb-3">
             <label
               htmlFor="message"
               className="mb-3 block text-base md:text-lg font-medium text-[#1C1C1C]"
@@ -278,14 +278,14 @@ const ContactForm = () => {
             <FormValError>
               {errors.message && touched.message && errors.message}
             </FormValError>
-          </div>
+          </div> */}
 
           <div className="pb-5">
             <button
               type="submit"
               className="hover:shadow-form rounded-lg bg-gray-900 py-2 px-16 text-center text-lg font-semibold text-white outline-none"
             >
-              Submit
+              Get Proposal
             </button>
           </div>
         </Form>

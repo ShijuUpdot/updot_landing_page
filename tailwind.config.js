@@ -12,6 +12,7 @@ module.exports = {
           200: '#E4E4E7', // <-- This is the new color
           600: '#52525B', // <-- This is the new color
           700: '#3F3F46', // <-- This is the new color
+          800: '#DCDCDC',
           900: '#18181B', // <-- This is the new color
         },
       },

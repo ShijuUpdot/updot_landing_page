@@ -38,7 +38,7 @@ const Services = () => {
               consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
               arcu.
             </p>
-            <Link className="py-2" href="#">
+            <Link className="py-2" href="#contact">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-base md:text-xl text-gray-900">
                   Contact&nbsp;Us

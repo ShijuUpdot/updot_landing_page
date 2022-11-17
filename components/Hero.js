@@ -14,14 +14,14 @@ const Hero = () => {
             <span>Development</span>
             <span>Company</span>
           </h1>
-          <p className="text-sm sm:text-sm xl:text-base text-gray-600 ">
+          <p className="hidden md:block text-sm sm:text-sm xl:text-base text-gray-600 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula
             massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
             arcu.
           </p>
 
-          <div className="flex">
+          <div className="hidden md:flex">
             <Link
               href="#stories"
               className="py-2 px-4 rounded-lg bg-gray-900 border-2 border-transparent text-white text-base sm:text-lg mr-4 hover:bg-gray-800"
