@@ -310,7 +310,7 @@ const ContactForm = () => {
           <div className="pb-5">
             <button
               type="submit"
-              className="hover:shadow-form rounded-lg bg-gray-900 py-2 px-16 text-center text-lg font-semibold text-white outline-none"
+              className="hover:shadow-form rounded-lg bg-gray-900 py-2 px-4 text-center text-lg font-semibold text-white outline-none"
             >
               Get Proposal
             </button>

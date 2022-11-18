@@ -5,8 +5,8 @@ import HeroForm from './HeroForm'
 
 const Hero = () => {
   return (
-    <div className="container mx-auto px-4 py-8 md:py-0 flex items-center relative  md:h-screen">
-      <div className="grid gap-y-10 md:gap-x-24 md:grid-cols-2 items-start">
+    <div className="w-full mx-auto px-4 py-8 md:py-0 flex items-center relative  md:h-screen">
+      <div className="w-full grid gap-y-10 md:gap-x-24 grid-cols-1 md:grid-cols-2 items-start">
         <div className="flex flex-col justify-center relative z-20 gap-3 md:gap-6">
           <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold flex flex-col text-gray-900 gap-y-2">
             Professional
@@ -30,7 +30,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-start relative z-20 ">
+        <div className="w-full flex flex-col justify-center items-center md:items-start relative z-20 ">
           <HeroForm />
         </div>
       </div>

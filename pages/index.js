@@ -39,7 +39,7 @@ export default function Home() {
         <Navbar />
       </section>
       {/* Hero Section */}
-      <section className={styles.hero}>
+      <section>
         <Hero />
       </section>
       {/* Clients Section */}
