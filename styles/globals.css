@@ -8,6 +8,7 @@
   html, body {
     @apply font-body;
     scroll-behavior: smooth;
+    background-color: #FAFAFA;
   }
 
   section {

@@ -31,7 +31,7 @@ const HeroForm = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-4 xl:py-4 shadow-2xl">
+    <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full md:max-w-md lg:max-w-lg  xl:max-w-xl ml-auto px-6 xl:px-12 md:px-8 py-4 xl:py-10 shadow-2xl">
       <h3 className="uppercase lg:text-lg xl:text-xl font-bold text-gray-900 text-center w-full pb-4">
         Get in Touch
       </h3>
@@ -48,9 +48,9 @@ const HeroForm = () => {
           handleSubmit(values)
           setSubmitting(false)
           setShowThanks(true)
-          setTimeout(() => {
-            setShowThanks(false)
-          }, 7000)
+          // setTimeout(() => {
+          //   setShowThanks(false)
+          // }, 7000)
         }}
       >
         {({

@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
       </div>
       {/* Right Side */}
-      <div className="w-full md:w-1/2 md:pl-28 flex flex-col justify-center items-start relative">
+      <div className="w-full md:w-1/2 md:pl-24 flex flex-col justify-center items-start relative">
         <ContactForm />
       </div>
     </div>

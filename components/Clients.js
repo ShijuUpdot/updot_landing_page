@@ -32,7 +32,7 @@ const Clients = () => {
     },
   ]
   return (
-    <div className="container mx-auto px-5 flex relative py-10 md:py-8 xl:py-10">
+    <div className="flex relative py-10 md:py-8 xl:py-10">
       <Marquee gradient={false} speed={75}>
         <div className="flex justify-between w-full">
           {clients.map((client) => (

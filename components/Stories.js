@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import MockupImg1 from '../assets/stories/Mockup1.png'
@@ -13,11 +13,14 @@ import Review from './Review'
 import Avatar1 from '../assets/stories/avatars/1.png'
 import Avatar2 from '../assets/stories/avatars/2.png'
 import Avatar3 from '../assets/stories/avatars/3.png'
+import { Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
 const Stories = () => {
   const [currentReview, setCurrentReview] = useState(0)
+  const [swiper, setSwiper] = useState()
+
   const stories = [
     {
       name: 'RE/MAX Website',
@@ -222,13 +225,17 @@ const Stories = () => {
           </div>
         </div>
       </div>
+
+      {/* MOBILE SLIDER */}
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
         centeredSlides
         onSlideChange={(swiper) => setCurrentReview(swiper.activeIndex)}
-        // onSwiper={(swiper) => console.log(swiper)}
+        onSwiper={(swiper) => setSwiper(swiper)}
         className="block md:hidden"
+        modules={[Navigation]}
+        navigation={{ nextEl: '#swiper-forward', prevEl: '#swiper-back' }}
       >
         {stories.map((slide, id) => (
           <SwiperSlide key={id} className="w-full px-4">
@@ -268,17 +275,46 @@ const Stories = () => {
             </div>
           </SwiperSlide>
         ))}
-        <div className="flex items-center justify-center gap-2 pt-10">
-          {stories.map((_, index) => (
-            <div
-              key={index}
-              className={`w-3 h-3 rounded-full cursor-pointer ${
-                currentReview === index ? 'bg-gray-900' : 'bg-gray-300'
-              }`}
-            />
-          ))}
-        </div>
       </Swiper>
+      <div className="flex md:hidden items-center justify-center gap-2 pt-6">
+        <div
+          className={`rotate-180 flex items-center justify-center w-8 h-8 rounded-full cursor-pointer ${
+            currentReview === 0 ? 'invisible' : ''
+          }`}
+          id={'swiper-back'}
+        >
+          <Image
+            src="/icons/arrow_right.svg"
+            alt="arrow"
+            width={20}
+            height={20}
+            className="invert"
+          />
+        </div>
+        {stories.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              currentReview === index ? 'bg-gray-900' : 'bg-gray-300'
+            }`}
+            onClick={() => swiper.slideTo(index)}
+          />
+        ))}
+        <div
+          className={`flex items-center justify-center w-8 h-8 rounded-full cursor-pointer ${
+            currentReview === stories.length - 1 ? 'invisible' : ''
+          }`}
+          id={'swiper-forward'}
+        >
+          <Image
+            src="/icons/arrow_right.svg"
+            alt="arrow"
+            width={20}
+            height={20}
+            className="invert"
+          />
+        </div>
+      </div>
     </>
   )
 }

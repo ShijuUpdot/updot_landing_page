@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="w-full relative bg-[#f5f5f5] ">
+    <nav className="w-full relative bg-transparent ">
       <div className="max-w-full mx-auto px-4">
         <div className="flex items-center justify-between py-2">
           <div className="w-full justify-between flex items-center">
@@ -35,7 +35,7 @@ export default function Navbar() {
               <div className="ml-10 flex items-center space-x-10">
                 <div className="block">
                   <Link
-                    className="text-black hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-black  px-3 py-2 rounded-md text-sm font-medium"
                     href="tel:917907589188"
                   >
                     <div className="flex items-center gap-3">

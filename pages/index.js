@@ -17,7 +17,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>
+          UPDOT | Best Web Development & Design Company in Bangalore
+        </title>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
           rel="preconnect"
@@ -28,8 +30,12 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         ></link>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        ></meta>
       </Head>
-      <section className="bg-[#f5f5f5] ">
+      <section className="">
         <Navbar />
       </section>
       {/* Hero Section */}
@@ -37,9 +43,7 @@ export default function Home() {
         <Hero />
       </section>
       {/* Clients Section */}
-      <section>
-        <Clients />
-      </section>
+      <Clients />
       {/* Service Section */}
       <section>
         <Title>Why partner with UPDOT</Title>
