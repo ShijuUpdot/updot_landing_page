@@ -131,7 +131,7 @@ const Stories = () => {
                   <br className="hidden md:block" />
                   Design
                 </h3>
-                <p className="text-sm sm:text-lg text-gray-600 pt-2 md:pt-0">
+                <p className="text-sm sm:text-lg text-gray-600 pt-2 md:pt-0 md:max-w-md">
                   {stories[currentReview].details}
                 </p>
                 <div className="flex items-center md:justify-start">
