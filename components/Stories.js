@@ -31,7 +31,7 @@ const Stories = () => {
         <>
           Remax is one our estimable clients and
           <br />
-          we've worked on their website for Remax Infinity.
+          we&apos;ve worked on their website for Remax Infinity.
         </>
       ),
       review: {
@@ -87,8 +87,8 @@ const Stories = () => {
       link: 'https://taibarare.com/',
       details: (
         <>
-          UPDOT is pleased to have Taiba on it's clientele and to have joined
-          hands to work on their website development.
+          UPDOT is pleased to have Taiba on it&apos;s clientele and to have
+          joined hands to work on their website development.
         </>
       ),
       review: {
