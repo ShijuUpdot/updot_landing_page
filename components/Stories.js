@@ -29,14 +29,14 @@ const Stories = () => {
       link: 'https://www.remax.in/',
       details: (
         <>
-          We worked with Remax on their website
+          Remax is one our estimable clients and
           <br />
-          providing the best of technology and reach.
+          we've worked on their website for Remax Infinity.
         </>
       ),
       review: {
-        name: 'Shreya',
-        desc: 'Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper pretium ornare.',
+        name: 'Ankush',
+        desc: "I would highly recommend UPDOT Solutions. They are great to work with and for the work they've done for us we have already recommended them to many of our partners.",
         title: 'Best Web development Agency in Market',
         image: Avatar1,
         stars: 5,
@@ -49,14 +49,13 @@ const Stories = () => {
       link: 'https://bookyanholidays.com/',
       details: (
         <>
-          We worked with Bookyan on their website
-          <br />
-          providing the best of technology and reach.
+          We are more than happy to have provided a full fledged digital
+          solutions package to Bookyan, which is a Kerala based Travel agency.
         </>
       ),
       review: {
-        name: 'Karan',
-        desc: 'Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper pretium ornare.',
+        name: 'Shijo',
+        desc: "With UPDOT's help, our website is now much more easy to use, has tons of more features than before and is incredibly easy to maintain.",
         title: 'Updot is amazing agency in Web development',
         image: Avatar2,
         stars: 5,
@@ -69,14 +68,13 @@ const Stories = () => {
       link: 'https://envnt.co/',
       details: (
         <>
-          We worked with Envnt on their website
-          <br />
-          providing the best of technology and reach.
+          Envnt is an attractive addition to our clientele. We worked together
+          to solve their digital concerns for Gitex Global event.
         </>
       ),
       review: {
-        name: 'Aman',
-        desc: 'Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper pretium ornare.',
+        name: 'Ibrahim',
+        desc: 'UPDOT hass proven to be an outstanding design agency. I wasn’t aware how to add value to my brand until I met the folks at UPDOT. Much thanks to the team.',
         title: 'Really nice website',
         image: Avatar3,
         stars: 5,
@@ -89,15 +87,14 @@ const Stories = () => {
       link: 'https://taibarare.com/',
       details: (
         <>
-          We worked with TAIBA on their website
-          <br />
-          providing the best of technology and reach.
+          UPDOT is pleased to have Taiba on it's clientele and to have joined
+          hands to work on their website development.
         </>
       ),
       review: {
-        name: 'Karan',
-        desc: 'Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper pretium ornare.',
-        title: 'Really nice website',
+        name: 'Shanon',
+        desc: "We were thoroughly impressed with UPDOT's quality of design and overall working style. They took the time to discuss each project in detail, worked on it as per our needs and met our expectations. I can’t thank them enough.",
+        title: 'Highly impressed with the work.',
         image: Avatar2,
         stars: 5,
       },

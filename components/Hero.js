@@ -15,10 +15,10 @@ const Hero = () => {
             <span>Company</span>
           </h1>
           <p className="hidden md:block text-sm sm:text-sm xl:text-base text-gray-600 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula
-            massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
-            arcu.
+            Being your perfect web solutions partner, UPDOT is a Bangalore based
+            web design and development studio. Striving to the best of its
+            abilities the team serves top-notch digital experiences to its
+            clients.
           </p>
 
           <div className="hidden md:flex">

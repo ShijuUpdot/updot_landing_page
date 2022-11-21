@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
 import RemaxImg from '../assets/clients/remax.svg'
-import KiaImg from '../assets/clients/kia.svg'
-import ChaumetImg from '../assets/clients/chaumet.svg'
+import KiaImg from '../assets/webp/kia.webp'
+import ChaumetImg from '../assets/webp/chaumet1-1.webp'
 import AgthiaImg from '../assets/clients/agthia.svg'
-import HyundaiImg from '../assets/clients/hyundai.svg'
+import HyundaiImg from '../assets/webp/hyundai.webp'
 
 const Clients = () => {
   const clients = [
@@ -32,7 +32,7 @@ const Clients = () => {
     },
   ]
   return (
-    <div className="flex relative py-10 md:py-8 xl:py-10">
+    <div className="flex relative py-10 md:py-8 xl:py-10 bg-gray-100">
       <Marquee gradient={false} speed={75}>
         <div className="flex justify-between w-full">
           {clients.map((client) => (

@@ -35,11 +35,11 @@ export default function Home() {
           content="width=device-width, initial-scale=1, maximum-scale=1"
         ></meta>
       </Head>
-      <section className="">
+      <section className="bg-gray-100">
         <Navbar />
       </section>
       {/* Hero Section */}
-      <section>
+      <section className={styles.hero}>
         <Hero />
       </section>
       {/* Clients Section */}

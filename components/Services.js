@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import ServiceCard from './ServiceCard'
-import ServiceImg from '../assets/services.svg'
+import ServiceImg from '../assets/webp/Web_development-Mockup.webp'
 
 const Services = () => {
   const services = [
@@ -33,10 +33,9 @@ const Services = () => {
               </ServiceCard>
             ))}
             <p className="text-sm sm:text-base text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula
-              massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
-              arcu.
+              We are developers by profession and artists by passion. Leveraging
+              the use of the latest tech and trends in the field, we offer the
+              best web design solutions for any business needs.
             </p>
             <Link className="py-2" href="#contact">
               <div className="flex items-center gap-2">
