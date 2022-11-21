@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div className="block">
                   <Link
                     className="text-black  px-3 py-2 rounded-md text-sm font-medium"
-                    href="tel:917907589188"
+                    href="tel:+916362070745"
                   >
                     <div className="flex items-center gap-3">
                       <Image
@@ -46,7 +46,7 @@ export default function Navbar() {
                         height={18}
                         className="inline"
                       />
-                      <span>+91&nbsp;7907589188</span>
+                      <span>+91-6362070745</span>
                     </div>
                   </Link>
                 </div>
