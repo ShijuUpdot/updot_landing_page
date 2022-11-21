@@ -36,7 +36,7 @@ const Stories = () => {
       ),
       review: {
         name: 'Ankush',
-        desc: "I would highly recommend UPDOT Solutions. They are great to work with and for the work they've done for us we have already recommended them to many of our partners.",
+        desc: `I would highly recommend UPDOT Solutions. They are great to work with and for the work they've done for us we have already recommended them to many of our partners.`,
         title: 'Best Web development Agency in Market',
         image: Avatar1,
         stars: 5,
@@ -55,7 +55,7 @@ const Stories = () => {
       ),
       review: {
         name: 'Shijo',
-        desc: "With UPDOT's help, our website is now much more easy to use, has tons of more features than before and is incredibly easy to maintain.",
+        desc: `With UPDOT's help, our website is now much more easy to use, has tons of more features than before and is incredibly easy to maintain.`,
         title: 'Updot is amazing agency in Web development',
         image: Avatar2,
         stars: 5,
@@ -74,7 +74,7 @@ const Stories = () => {
       ),
       review: {
         name: 'Ibrahim',
-        desc: 'UPDOT hass proven to be an outstanding design agency. I wasn’t aware how to add value to my brand until I met the folks at UPDOT. Much thanks to the team.',
+        desc: `UPDOT has proven to be an outstanding design agency. I wasn't aware how to add value to my brand until I met the folks at UPDOT. Much thanks to the team.`,
         title: 'Really nice website',
         image: Avatar3,
         stars: 5,
@@ -93,7 +93,7 @@ const Stories = () => {
       ),
       review: {
         name: 'Shanon',
-        desc: "We were thoroughly impressed with UPDOT's quality of design and overall working style. They took the time to discuss each project in detail, worked on it as per our needs and met our expectations. I can’t thank them enough.",
+        desc: `We were thoroughly impressed with UPDOT's quality of design and overall working style. They took the time to discuss each project in detail, worked on it as per our needs and met our expectations. I can't thank them enough.`,
         title: 'Highly impressed with the work.',
         image: Avatar2,
         stars: 5,
