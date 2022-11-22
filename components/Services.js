@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import ServiceCard from './ServiceCard'
-import ServiceImg from '../assets/webp/Web_development-Mockup.webp'
+import ServiceImg from '../assets/webp/client-hero-img.webp'
 
 const Services = () => {
   const services = [

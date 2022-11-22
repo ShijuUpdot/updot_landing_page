@@ -1,14 +1,14 @@
 import React, { useState, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import MockupImg1 from '../assets/stories/Mockup1.png'
-import MockupImg2 from '../assets/stories/Mockup2.png'
-import MockupImg3 from '../assets/stories/Mockup3.png'
-import MockupImg4 from '../assets/stories/Mockup4.png'
-import MockupMobImg1 from '../assets/stories/MockupMob1.png'
-import MockupMobImg2 from '../assets/stories/MockupMob2.png'
-import MockupMobImg3 from '../assets/stories/MockupMob3.png'
-import MockupMobImg4 from '../assets/stories/MockupMob4.png'
+import remaxDesk from '../assets/webp/remax.webp'
+import bookyanDesk from '../assets/webp/bookyan.webp'
+import envntDesk from '../assets/webp/envnt.webp'
+import taibaDesk from '../assets/webp/taiba.webp'
+import remaxMob from '../assets/webp/remax-mobile.webp'
+import bookyanMob from '../assets/webp/bookyan-mobile.webp'
+import taibaMob from '../assets/webp/taiba-mobile.webp'
+import envntMob from '../assets/webp/envnt-mobile.webp'
 import Review from './Review'
 import Avatar from '../assets/svg/Frame.svg'
 import Avatar1 from '../assets/stories/avatars/1.png'
@@ -25,8 +25,8 @@ const Stories = () => {
   const stories = [
     {
       name: 'RE/MAX Website',
-      imageDesktop: MockupImg1,
-      imageMobile: MockupMobImg1,
+      imageDesktop: remaxDesk,
+      imageMobile: remaxMob,
       link: 'https://www.remax.in/',
       details: (
         <>
@@ -45,8 +45,8 @@ const Stories = () => {
     },
     {
       name: 'BOOKYAN Website',
-      imageDesktop: MockupImg2,
-      imageMobile: MockupMobImg2,
+      imageDesktop: bookyanDesk,
+      imageMobile: bookyanMob,
       link: 'https://bookyanholidays.com/',
       details: (
         <>
@@ -64,8 +64,8 @@ const Stories = () => {
     },
     {
       name: 'ENVNT Website',
-      imageDesktop: MockupImg3,
-      imageMobile: MockupMobImg3,
+      imageDesktop: envntDesk,
+      imageMobile: envntMob,
       link: 'https://envnt.co/',
       details: (
         <>
@@ -83,8 +83,8 @@ const Stories = () => {
     },
     {
       name: 'TAIBA Website',
-      imageDesktop: MockupImg4,
-      imageMobile: MockupMobImg4,
+      imageDesktop: taibaDesk,
+      imageMobile: taibaMob,
       link: 'https://taibarare.com/',
       details: (
         <>
@@ -112,10 +112,10 @@ const Stories = () => {
         onSwiper={(swiper) => setSwiper(swiper)}
         modules={[Navigation, Autoplay]}
         autoplay={{
-          delay: 5000,
+          delay: 4000,
           disableOnInteraction: true,
         }}
-        speed={2000}
+        speed={1500}
         navigation={{ nextEl: '#swiper-forward', prevEl: '#swiper-back' }}
         className="flex flex-col relative px-2 md:px-0"
       >
