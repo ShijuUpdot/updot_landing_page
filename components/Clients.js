@@ -45,6 +45,10 @@ const Clients = () => {
                 alt={client.name}
                 width={130}
                 height={130}
+                style={{
+                  objectFit: 'contain',
+                  maxWidth: '100%',
+                }}
               />
             </div>
           ))}

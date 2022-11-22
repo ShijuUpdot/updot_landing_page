@@ -58,7 +58,7 @@ export default function Home() {
       <section className="md:py-10 bg-[#FAFAFA]">
         <Footer />
       </section>
-      <FloatingButton link={'https://api.whatsapp.com/send?phone=6362070745'}>
+      <FloatingButton link={'https://api.whatsapp.com/send?phone=7907589188'}>
         <Image
           src={wplogo}
           width={'50'}

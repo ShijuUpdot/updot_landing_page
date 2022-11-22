@@ -112,9 +112,10 @@ const Stories = () => {
         onSwiper={(swiper) => setSwiper(swiper)}
         modules={[Navigation, Autoplay]}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: true,
         }}
+        speed={2000}
         navigation={{ nextEl: '#swiper-forward', prevEl: '#swiper-back' }}
         className="flex flex-col relative px-2 md:px-0"
       >
