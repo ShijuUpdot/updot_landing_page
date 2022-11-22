@@ -66,7 +66,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'ENVNT Website Design and Development',
+      name: 'ENVNT Website Design And Development',
       imageDesktop: envntDesk,
       imageMobile: envntMob,
       link: 'https://envnt.co/',
@@ -85,7 +85,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'TAIBA Website Design and Development',
+      name: 'TAIBA Website Design And Development',
       imageDesktop: taibaDesk,
       imageMobile: taibaMob,
       link: 'https://taibarare.com/',
