@@ -2,14 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import IconButton from './IconButton'
 import Link from 'next/link'
-
+import Logo from '../assets/svg/logo.svg'
 const Footer = () => {
   return (
     <footer className="container mx-auto px-4 py-10">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center flex-shrink-0 ">
           <Image
-            src="/logo.svg"
+            src={Logo}
             alt="Updot Logo"
             width={50}
             height={50}

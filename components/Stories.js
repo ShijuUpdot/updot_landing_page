@@ -18,13 +18,16 @@ import { Navigation, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`
+}
 const Stories = () => {
   const [currentReview, setCurrentReview] = useState(0)
   const [swiper, setSwiper] = useState()
 
   const stories = [
     {
-      name: 'RE/MAX Website',
+      name: 'RE/MAX Website Design',
       imageDesktop: remaxDesk,
       imageMobile: remaxMob,
       link: 'https://www.remax.in/',
@@ -44,7 +47,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'BOOKYAN Website',
+      name: 'BOOKYAN Website Design',
       imageDesktop: bookyanDesk,
       imageMobile: bookyanMob,
       link: 'https://bookyanholidays.com/',
@@ -63,7 +66,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'ENVNT Website',
+      name: 'ENVNT Website Design and Development',
       imageDesktop: envntDesk,
       imageMobile: envntMob,
       link: 'https://envnt.co/',
@@ -82,7 +85,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'TAIBA Website',
+      name: 'TAIBA Website Design and Development',
       imageDesktop: taibaDesk,
       imageMobile: taibaMob,
       link: 'https://taibarare.com/',
@@ -120,14 +123,12 @@ const Stories = () => {
         className="flex flex-col relative px-2 md:px-0"
       >
         {stories.map((slide, id) => (
-          <SwiperSlide key={id} className="flex">
-            <div className="grid gap-4 md:grid-cols-2 align-middle justify-between w-full h-full">
+          <SwiperSlide key={id} className="flex w-full">
+            <div className="grid gap-4 md:gap-0 md:grid-cols-2 align-middle justify-between w-full h-full relative">
               <div className="flex flex-col justify-center z-20 gap-6 pl-0 md:pl-[19%] xl:pl-[20%] order-1 md:order-first md:pt-20 md:pb-10">
                 <div className="md:px-0 px-4">
                   <h3 className="md:pb-2 text-lg sm:text-4xl font-semibold flex flex-col text-gray-900">
                     {slide.name}
-                    <br className="hidden md:block" />
-                    Design
                   </h3>
                   <p className="text-sm sm:text-lg text-gray-600 pt-2 md:pt-0 md:max-w-md">
                     {slide.details}
@@ -155,17 +156,16 @@ const Stories = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-start relative">
+              <div className="w-full ">
                 <Image
                   src={slide.imageDesktop}
                   alt="service"
-                  className="hidden md:block"
                   style={{
-                    width: 'auto',
                     objectFit: 'cover',
-                    maxWidth: '100%',
-                    height: '100%',
                   }}
+                  className="hidden md:block"
+                  width={'100%'}
+                  height={'100%'}
                 />
                 <Image
                   src={slide.imageMobile}

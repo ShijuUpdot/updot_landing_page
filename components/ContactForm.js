@@ -45,9 +45,10 @@ const ContactForm = () => {
         handleSubmit(values)
         setSubmitting(false)
         setShowThanks(true)
-        setTimeout(() => {
-          setShowThanks(false)
-        }, 7000)
+        document.body.style.overflow = 'hidden'
+        // setTimeout(() => {
+        //   setShowThanks(false)
+        // }, 7000)
       }}
     >
       {({

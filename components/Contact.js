@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ContactForm from './ContactForm'
-
+import Logo from '../assets/svg/updot.svg'
 const Contact = () => {
   return (
     <div className="container mx-auto px-4 relative flex flex-col md:flex-row  justify-center items-center gap-16">
@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="w-full md:w-1/2 flex flex-col self-start relative order-1 md:order-first">
         <div className="py-9 px-2">
           <Image
-            src="/logo-alt.png"
+            src={Logo}
             alt="Logo"
             width={200}
             height={200}
