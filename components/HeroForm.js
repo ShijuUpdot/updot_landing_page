@@ -48,10 +48,10 @@ const HeroForm = () => {
           handleSubmit(values)
           setSubmitting(false)
           setShowThanks(true)
-          document.body.style.position = 'fixed'
-          // setTimeout(() => {
-          //   setShowThanks(false)
-          // }, 7000)
+
+          setTimeout(() => {
+            document.body.style.position = 'fixed'
+          }, 3000)
         }}
       >
         {({
