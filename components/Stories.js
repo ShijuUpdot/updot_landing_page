@@ -27,7 +27,7 @@ const Stories = () => {
 
   const stories = [
     {
-      name: 'RE/MAX Website Design',
+      name: 'RE/MAX Website Design And Development',
       imageDesktop: remaxDesk,
       imageMobile: remaxMob,
       link: 'https://www.remax.in/',
@@ -47,7 +47,7 @@ const Stories = () => {
       },
     },
     {
-      name: 'BOOKYAN Website Design',
+      name: 'BOOKYAN Website Design And Development',
       imageDesktop: bookyanDesk,
       imageMobile: bookyanMob,
       link: 'https://bookyanholidays.com/',

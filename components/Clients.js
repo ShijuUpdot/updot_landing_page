@@ -43,8 +43,8 @@ const Clients = () => {
               <Image
                 src={client.logo}
                 alt={client.name}
-                width={130}
-                height={130}
+                width={120}
+                height={120}
                 style={{
                   objectFit: 'contain',
                   maxWidth: '100%',
