@@ -48,7 +48,7 @@ const HeroForm = () => {
           handleSubmit(values)
           setSubmitting(false)
           setShowThanks(true)
-          document.body.style.overflow = 'hidden'
+          document.body.style.position = 'fixed'
           // setTimeout(() => {
           //   setShowThanks(false)
           // }, 7000)
