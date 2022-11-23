@@ -2,7 +2,7 @@ import React from 'react'
 import IconButton from './IconButton'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Logo from '../assets/svg/logo.svg'
 export default function Navbar() {
   return (
     <nav className="w-full relative bg-transparent ">
@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="flex-shrink-0 flex items-center">
               <Link className="flex-shrink-0" href="/">
                 <Image
-                  src="/logo.svg"
+                  src={Logo}
                   alt="logo"
                   width={65}
                   height={65}
