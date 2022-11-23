@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import RemaxImg from '../assets/trustedby/Remax.svg'
+import RemaxImg from '../assets/trustedby/remax.svg'
 import KiaImg from '../assets/webp/kia.webp'
 import ChaumetImg from '../assets/webp/chaumet1-1.webp'
 import AgthiaImg from '../assets/trustedby/Agthia.svg'
