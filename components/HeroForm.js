@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import IconButton from './IconButton'
 import { useForm } from '@formspree/react'
 import Thanks from './Thanks'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 import FormValError from './FormValError'
+import { useRouter } from 'next/router'
 
 const HeroForm = () => {
   const [state, handleSubmit] = useForm('xgeqrepg')
-  const [showThanks, setShowThanks] = useState(false)
+  const router = useRouter()
 
   const heroFormSchema = Yup.object().shape({
     name: Yup.string()
@@ -25,10 +26,6 @@ const HeroForm = () => {
       .matches(/^[0-9]*$/, 'Only numbers are allowed'),
     message: Yup.string().min(2, 'Too Short!').max(500, 'Too Long!'),
   })
-
-  if (state.succeeded && showThanks) {
-    return <Thanks />
-  }
 
   return (
     <div className="flex flex-col justify-center items-start relative bg-white rounded-xl justify-self-center w-full px-6 xl:px-12 md:px-8 py-4 xl:py-10 shadow-2xl">
@@ -47,11 +44,7 @@ const HeroForm = () => {
         onSubmit={(values, { setSubmitting }) => {
           handleSubmit(values)
           setSubmitting(false)
-          setShowThanks(true)
-
-          setTimeout(() => {
-            document.body.style.position = 'fixed'
-          }, 3000)
+          router.push('/message')
         }}
       >
         {({

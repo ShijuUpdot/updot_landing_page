@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { useForm } from '@formspree/react'
-import Thanks from './Thanks'
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import FormValError from './FormValError'
-
+import { useRouter } from 'next/router'
 const contactSchema = Yup.object().shape({
   fullName: Yup.string()
     .matches(/^[a-zA-Z ]*$/, 'Only letters and spaces are allowed')
@@ -23,12 +22,7 @@ const contactSchema = Yup.object().shape({
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm('mrgdrgjp')
-  const [showThanks, setShowThanks] = useState(false)
-
-  if (state.succeeded) {
-    return <Thanks />
-  }
-
+  const router = useRouter()
   return (
     <Formik
       initialValues={{
@@ -44,10 +38,7 @@ const ContactForm = () => {
       onSubmit={(values, { setSubmitting }) => {
         handleSubmit(values)
         setSubmitting(false)
-        setShowThanks(true)
-        setTimeout(() => {
-          document.body.style.position = 'fixed'
-        }, 3000)
+        router.push('/message')
       }}
     >
       {({
