@@ -10,8 +10,8 @@ const Hero = () => {
         <div className="flex flex-col justify-center relative z-20 gap-3 md:gap-6">
           <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold flex flex-col text-gray-900 gap-y-2">
             Professional
-            <span>Website Design and</span>
-            <span>Development</span>
+            <span>Website Development and</span>
+            <span>Design</span>
             <span>Company</span>
           </h1>
           <p className="hidden md:block text-sm sm:text-sm xl:text-base text-gray-600 ">
